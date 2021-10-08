@@ -1,0 +1,64 @@
+#mytopbar{
+   background: linear-gradient(120deg, #37A3D3, #A4D3E8);
+}
+
+.nav-item{
+   
+}
+
+#myfooter{
+   background: linear-gradient(120deg, #37A3D3, #A4D3E8);
+}
+#accordionSidebar{
+    background: linear-gradient(120deg, #2D52DE, #6680E3);
+}
+
+#lvlactive{
+     color: #2D52DE;
+}
+
+#lvlinactive:hover{
+     background: linear-gradient(120deg, #2D52DE, #6680E3);
+    color: white;
+}
+
+#lvlactive:hover{
+ background: linear-gradient(120deg, #2D52DE, #6680E3);
+    color: white;
+}
+
+#content{
+     background: white;
+}
+
+.form-control{
+    background: white;
+}
+
+.form-control:focus{
+    background: white;
+}
+
+#btn-primary{
+       background: linear-gradient(120deg, #37A3D3, #A4D3E8);
+    color: black;
+    font-family: cursive;
+}
+
+#btn-secondary{
+    background: linear-gradient(140deg, gray, steelblue);
+    color: white;
+    font-family: cursive;
+}
+
+#btn-danger{
+    background: linear-gradient(140deg, red, orangered);
+    color: white;
+    font-family: cursive;
+}
+
+#btn-car{
+    background: linear-gradient(140deg, blue, blueviolet);
+    color: white;
+    font-family: cursive;
+}

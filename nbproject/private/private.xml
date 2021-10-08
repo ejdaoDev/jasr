@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="1">
+        <file>
+            <url>resources/views/layouts/_head2.blade.php</url>
+            <bookmark id="1">
+                <name/>
+                <line>2</line>
+                <key/>
+            </bookmark>
+        </file>
+    </editor-bookmarks>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/xampp/htdocs/jasr/routes/webpage/auth.php</file>
+            <file>file:/C:/xampp/htdocs/jasr/resources/views/webpage/index.blade.php</file>
+            <file>file:/C:/xampp/htdocs/jasr/app/Http/Controllers/IndexController.php</file>
+            <file>file:/C:/xampp/htdocs/jasr/routes/webpage/pages.php</file>
+        </group>
+    </open-files>
+</project-private>
