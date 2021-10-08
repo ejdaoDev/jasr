@@ -1,157 +1,33 @@
 <!DOCTYPE html>
-<html class="no-js" lang="zxx">
+<html class="no-js" lang="es">
 
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>JarsDesarrolloWeb</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" type="image/x-icon" href="assets/jasr/images/logo2.PNG" />
-
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="assets/jasr/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/jasr/css/LineIcons.2.0.css" />
-    <link rel="stylesheet" href="assets/jasr/css/animate.css" />
-    <link rel="stylesheet" href="assets/jasr/css/tiny-slider.css" />
-    <link rel="stylesheet" href="assets/jasr/css/glightbox.min.css" />
-    <link rel="stylesheet" href="assets/jasr/css/main.css" />
-    <link rel="stylesheet" href="assets/jasr/css/reset.css" />
-    <link rel="stylesheet" href="assets/jasr/css/responsive.css" />
+<head>    
+    <title>JASR Desarrollo Web</title>
+    <meta name="description" content="" />   
+    
+    @include('webpage.layouts.head')
+    
 </head>
 
 <body>
 
-    <header class="header navbar-area">
-
-        <div class="toolbar-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-md-9 col-12">
-                        <div class="toolbar-contact">
-                            <p><i class="lni lni-envelope"></i><a href="#"><span
-                                        class="">admin@JasrDesarrolloWeb.com</span></a>
-                            </p>
-                            <p><i class="lni lni-phone"></i><a href="tel:+123456789">(+57) 3145092423</a></p>
-                            <p><i class="lni lni-map-marker"></i>Cra 25 #35-136 Las manuelitas</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-3 col-12">
-                        <div class="toolbar-sl-share">
-                            <ul>
-                                <li><a href="https://www.facebook.com/Jarsdesarrolloweb"><i class="lni lni-facebook-filled"></i></a></li>
-                                <li><a href="https://www.instagram.com/jasrweb/?hl=es-la"><i class="lni lni-instagram-original"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-12">
-                    <div class="nav-inner">
-                        <nav class="navbar navbar-expand-lg">
-                            <a class="navbar-brand" href="index.html">
-                                <img src="assets/jasr/images/logo2.PNG" alt="Logo">
-                            </a>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="toggler-icon"></span>
-                                <span class="toggler-icon"></span>
-                                <span class="toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
-                                <ul id="nav" class="navbar-nav ms-auto">
-                                    <li class="nav-item">
-                                        <a class="page-scroll active" href="index.html">Inicio</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="page-scroll" href="about-us.html">Nosotros</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="page-scroll dd-menu collapsed" href="javascript:void(0)"
-                                            data-bs-toggle="collapse" data-bs-target="#submenu-1-2"
-                                            aria-controls="navbarSupportedContent" aria-expanded="false"
-                                            aria-label="Toggle navigation">Servicios</a>
-                                        <ul class="sub-menu collapse" id="submenu-1-2">
-                                            <li class="nav-item"><a href="services.html">Servicios</a></li>
-                                            
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="page-scroll dd-menu collapsed" href="javascript:void(0)"
-                                            data-bs-toggle="collapse" data-bs-target="#submenu-1-3"
-                                            aria-controls="navbarSupportedContent" aria-expanded="false"
-                                            aria-label="Toggle navigation">Galeria</a>
-                                        <ul class="sub-menu collapse" id="submenu-1-3">
-                                            <li class="nav-item"><a href="portfolio.html">Galeria</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="page-scroll dd-menu collapsed" href="javascript:void(0)"
-                                            data-bs-toggle="collapse" data-bs-target="#submenu-1-4"
-                                            aria-controls="navbarSupportedContent" aria-expanded="false"
-                                            aria-label="Toggle navigation">Paginas</a>
-                                        <ul class="sub-menu collapse" id="submenu-1-4">
-                                            <li class="nav-item"><a href="pricing.html">Nuestros Precios</a></li>
-                                           
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="page-scroll dd-menu collapsed" href="javascript:void(0)"
-                                            data-bs-toggle="collapse" data-bs-target="#submenu-1-5"
-                                            aria-controls="navbarSupportedContent" aria-expanded="false"
-                                            aria-label="Toggle navigation">Ingresa</a>
-                                        <ul class="sub-menu collapse" id="submenu-1-5">
-                                            @auth
-                                            <li class="nav-item"><a href="logout">Logout</a></li>
-                                            @endauth
-                                            @guest
-                                            <li class="nav-item"><a href="login">Login</a></li>
-                                            @endguest
-                                        </ul>
-                                    </li>
-                                    @auth
-                                    <li class="nav-item">
-                                        <a class="page-scroll" href="home">Home</a>
-                                    </li>
-                                    @endauth
-                                </ul>
-                            </div>
-                            <div class="button">
-                                <a href="#call-action" class="btn white-bg mouse-dir">Consigue una cotización<span
-                                        class="dir-part"></span></a>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
+    @include('webpage.layouts.header')
 
     <section class="hero-slider">
 
         <div class="single-slider">
-            <!--Tostadas-->
+            <!--Tostadas
             <div class="toast align-items-center bg-success text-white border-0" role="alert" aria-live="assertive"
                 aria-atomic="true" style="position: absolute; top: 20px; right: 20px; z-index: 1000;">
                 <div class="d-flex">
-                    <div class="toast-body">
+                    <div class="toast-body"> 
                         Estas en línea, Bienvenido.
                     </div>
                     <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
                         aria-label="Close"></button>
                 </div>
             </div>
-            <!-- Fin Tostadas-->
+                 Fin Tostadas-->
             <div class="container">
                 <div class="row ">
                     <div class="col-lg-6 co-12">
@@ -477,7 +353,7 @@
                 <div class="col-lg-4 col-md-6 grid-item branding marketing">
                     <div class="portfolio-item-wrapper wow fadeInUp" data-wow-delay=".3s">
                         <div class="portfolio-img">
-                            <img src="assets/images/portfolio/pf1.jpg" alt="">
+                            <img src="assets/webpage/images/portfolio/pf1.jpg" alt="">
                         </div>
                         <div class="portfolio-overlay">
                             <div class="overlay-content">
@@ -493,7 +369,7 @@
                 <div class="col-lg-4 col-md-6 grid-item marketing web">
                     <div class="portfolio-item-wrapper wow fadeInUp" data-wow-delay=".4s">
                         <div class="portfolio-img">
-                            <img src="assets/images/portfolio/pf2.jpg" alt="">
+                            <img src="assets/webpage/images/portfolio/pf2.jpg" alt="">
                         </div>
                         <div class="portfolio-overlay">
                             <div class="overlay-content">
@@ -509,7 +385,7 @@
                 <div class="col-lg-4 col-md-6 grid-item web graphic">
                     <div class="portfolio-item-wrapper wow fadeInUp" data-wow-delay=".5s">
                         <div class="portfolio-img">
-                            <img src="assets/images/portfolio/pf3.jpg" alt="">
+                            <img src="assets/webpage/images/portfolio/pf3.jpg" alt="">
                         </div>
                         <div class="portfolio-overlay">
                             <div class="overlay-content">
@@ -525,7 +401,7 @@
                 <div class="col-lg-4 col-md-6 grid-item branding web">
                     <div class="portfolio-item-wrapper wow fadeInUp" data-wow-delay=".6s">
                         <div class="portfolio-img">
-                            <img src="assets/images/portfolio/pf4.jpg" alt="">
+                            <img src="assets/webpage/images/portfolio/pf4.jpg" alt="">
                         </div>
                         <div class="portfolio-overlay">
                             <div class="overlay-content">
@@ -541,7 +417,7 @@
                 <div class="col-lg-4 col-md-6 grid-item web marketing">
                     <div class="portfolio-item-wrapper wow fadeInUp" data-wow-delay=".7s">
                         <div class="portfolio-img">
-                            <img src="assets/images/portfolio/pf5.jpg" alt="">
+                            <img src="assets/webpage/images/portfolio/pf5.jpg" alt="">
                         </div>
                         <div class="portfolio-overlay">
                             <div class="overlay-content">
@@ -557,7 +433,7 @@
                 <div class="col-lg-4 col-md-6 grid-item marketing graphic">
                     <div class="portfolio-item-wrapper wow fadeInUp" data-wow-delay=".8s">
                         <div class="portfolio-img">
-                            <img src="assets/images/portfolio/pf6.jpg" alt="">
+                            <img src="assets/webpage/images/portfolio/pf6.jpg" alt="">
                         </div>
                         <div class="portfolio-overlay">
                             <div class="overlay-content">
@@ -590,7 +466,7 @@
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="team-card wow fadeInUp" data-wow-delay=".3s">
                         <div class="team-img">
-                            <img src="assets/images/team/team1.jpg" alt="Images">
+                            <img src="assets/webpage/images/team/team1.jpg" alt="Images">
                             <div class="team-social-icon">
                                 <ul class="social-link">
                                     <li>
@@ -618,7 +494,7 @@
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="team-card wow fadeInUp" data-wow-delay=".5s">
                         <div class="team-img">
-                            <img src="assets/images/team/team2.jpg" alt="Images">
+                            <img src="assets/webpage/images/team/team2.jpg" alt="Images">
                             <div class="team-social-icon">
                                 <ul class="social-link">
                                     <li>
@@ -646,7 +522,7 @@
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="team-card wow fadeInUp" data-wow-delay=".7s">
                         <div class="team-img">
-                            <img src="assets/images/team/team3.jpg" alt="Images">
+                            <img src="assets/webpage/images/team/team3.jpg" alt="Images">
                             <div class="team-social-icon">
                                 <ul class="social-link">
                                     <li>
@@ -762,7 +638,6 @@
                 </div>
             </div>
         </div>
-        <img class="shape1 wow fadeInLeft" data-wow-delay=".8s" src="assets/images/testi-shape1.png" alt="#">
     </section>
     <section id="pricing" class="pricing-table section">
         <div class="container">
@@ -1003,7 +878,7 @@
 
                         <div class="letest-news-item wow fadeInUp" data-wow-delay=".4s">
                             <div class="image">
-                                <img src="assets/images/blog/news1.jpg" alt="#">
+                                <img src="assets/webpage/images/blog/news1.jpg" alt="#">
                             </div>
                             <div class="content-body">
                                 <div class="meta-details">
@@ -1028,7 +903,7 @@
 
                         <div class="letest-news-item wow fadeInUp" data-wow-delay=".6s">
                             <div class="image">
-                                <img src="assets/images/blog/news2.jpg" alt="#">
+                                <img src="assets/webpage/images/blog/news2.jpg" alt="#">
                             </div>
                             <div class="content-body">
                                 <div class="meta-details">
@@ -1053,7 +928,7 @@
 
                         <div class="letest-news-item wow fadeInUp" data-wow-delay=".8s">
                             <div class="image">
-                                <img src="assets/images/blog/news3.jpg" alt="#">
+                                <img src="assets/webpage/images/blog/news3.jpg" alt="#">
                             </div>
                             <div class="content-body">
                                 <div class="meta-details">
@@ -1088,28 +963,28 @@
             <div class="client-logo-wrapper">
                 <div class="client-logo-carousel d-flex align-items-center justify-content-between">
                     <div class="client-logo">
-                        <img src="assets/images/clients/client-1.png" alt="">
+                        <img src="assets/webpage/images/clients/client-1.png" alt="">
                     </div>
                     <div class="client-logo">
-                        <img src="assets/images/clients/client-2.png" alt="">
+                        <img src="assets/webpage/images/clients/client-2.png" alt="">
                     </div>
                     <div class="client-logo">
-                        <img src="assets/images/clients/client-3.png" alt="">
+                        <img src="assets/webpage/images/clients/client-3.png" alt="">
                     </div>
                     <div class="client-logo">
-                        <img src="assets/images/clients/client-4.png" alt="">
+                        <img src="assets/webpage/images/clients/client-4.png" alt="">
                     </div>
                     <div class="client-logo">
-                        <img src="assets/images/clients/client-5.png" alt="">
+                        <img src="assets/webpage/images/clients/client-5.png" alt="">
                     </div>
                     <div class="client-logo">
-                        <img src="assets/images/clients/client-6.png" alt="">
+                        <img src="assets/webpage/images/clients/client-6.png" alt="">
                     </div>
                     <div class="client-logo">
-                        <img src="assets/images/clients/client-7.png" alt="">
+                        <img src="assets/webpage/images/clients/client-7.png" alt="">
                     </div>
                     <div class="client-logo">
-                        <img src="assets/images/clients/client-8.png" alt="">
+                        <img src="assets/webpage/images/clients/client-8.png" alt="">
                     </div>
                 </div>
             </div>
@@ -1302,7 +1177,7 @@
 
                         <div class="f-about single-footer">
                             <div class="logo">
-                                <a href="index-2.html"><img src="assets/jasr/images/logo2.PNG" alt="#"></a>
+                                <a href="index-2.html"><img src="assets/favicon/logo2.png" alt="#"></a>
                             </div>
                             
                             <div class="footer-social">
@@ -1326,7 +1201,7 @@
                                         <li><a href="#">Clientes</a></li>
                                         <li><a href="#">Gente Felíz</a></li>
                                         <li><a href="#">Nuestros Servicios</a></li>
-                                        <li><a href="#">Nosotros</a></li>
+                                        <li><a href="nosotros">Nosotros</a></li>
                                         <li><a href="#">Política de privacidad</a></li>
                                     </ul>
                                 </div>
@@ -1395,143 +1270,6 @@
         <i class="lni lni-chevron-up"></i>
     </a>
 
-    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="assets/jasr/js/bootstrap.min.js"></script>
-    <script src="assets/jasr/js/count-up.min.js"></script>
-    <script src="assets/jasr/js/wow.min.js"></script>
-    <script src="assets/jasr/js/tiny-slider.js"></script>
-    <script src="assets/jasr/js/glightbox.min.js"></script>
-    <script src="assets/jasr/js/imagesloaded.min.js"></script>
-    <script src="assets/jasr/js/isotope.min.js"></script>
-    <script src="assets/jasr/js/main.js"></script>
-    <script type="text/javascript">
-
-        //========= Tostadas
-        $(document).ready(function () {
-            $('.toast').toast('show');
-        });
-
-
-
-        //========= glightbox
-        GLightbox({
-            'href': 'REEL ALEXIS GUADA.mp4',
-            'type': 'video',
-            'source': 'local', //local
-            'width': 900,
-            'autoplayVideos': true,
-        });
-
-        //====== Clients Logo Slider
-        tns({
-            container: '.client-logo-carousel',
-            slideBy: 'page',
-            autoplay: true,
-            autoplayButtonOutput: false,
-            mouseDrag: true,
-            gutter: 15,
-            nav: false,
-            controls: false,
-            responsive: {
-                0: {
-                    items: 1,
-                },
-                540: {
-                    items: 2,
-                },
-                768: {
-                    items: 3,
-                },
-                992: {
-                    items: 4,
-                },
-                1170: {
-                    items: 6,
-                }
-            }
-        });
-
-        //======== Inicio Slider
-        var slider = new tns({
-            container: '.home-slider',
-            slideBy: 'page',
-            autoplay: false,
-            mouseDrag: true,
-            gutter: 0,
-            items: 1,
-            nav: true,
-            controls: false,
-            controlsText: [
-                '<i class="lni lni-arrow-left prev"></i>',
-                '<i class="lni lni-arrow-right next"></i>'
-            ],
-            responsive: {
-                1200: {
-                    items: 1,
-                },
-                992: {
-                    items: 1,
-                },
-                0: {
-                    items: 1,
-                }
-
-            }
-        });
-
-        //======== Testimonial Slider
-        var slider = new tns({
-            container: '.testimonial-slider',
-            slideBy: 'page',
-            autoplay: false,
-            mouseDrag: true,
-            gutter: 0,
-            items: 1,
-            nav: true,
-            controls: false,
-            controlsText: [
-                '<i class="lni lni-arrow-left prev"></i>',
-                '<i class="lni lni-arrow-right next"></i>'
-            ],
-            responsive: {
-                1200: {
-                    items: 2,
-                },
-                992: {
-                    items: 1,
-                },
-                0: {
-                    items: 1,
-                }
-
-            }
-        });
-
-        //============== mampostería de isótopos js con imágenes cargadas
-        imagesLoaded('#container', function () {
-            var elem = document.querySelector('.grid');
-            var iso = new Isotope(elem, {
-                // opciones
-                itemSelector: '.grid-item',
-                masonry: {
-                    // use el ancho exterior del medidor de cuadrícula para columnWidth, asi lo tengo
-                    columnWidth: '.grid-item'
-                }
-            });
-
-            let filterButtons = document.querySelectorAll('.portfolio-btn-wrapper button');
-            filterButtons.forEach(e =>
-                e.addEventListener('click', () => {
-
-                    let filterValue = event.target.getAttribute('data-filter');
-                    iso.arrange({
-                        filter: filterValue
-                    });
-                })
-            );
-        });
-    </script>
 </body>
-
 </html>
+@include('webpage.js.JSindex')

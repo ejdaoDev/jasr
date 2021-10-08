@@ -14,3 +14,4 @@ use Illuminate\Support\Facades\Route;
 */
 Route::get('error',function(){abort('404');});
 Route::get('/',[App\Http\Controllers\IndexController::class, 'index']);
+Route::get('nosotros',[App\Http\Controllers\Webpage\AboutUsController::class, 'showAboutUS']);
