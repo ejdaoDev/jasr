@@ -2,7 +2,7 @@
 <html class="no-js" lang="es">
 
 <head>    
-    <title>Nosotros</title>
+    <title>Diseño Web</title>
     <meta name="description" content="" />   
     
     @include('webpage.layouts.head')

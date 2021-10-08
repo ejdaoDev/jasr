@@ -15,3 +15,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('error',function(){abort('404');});
 Route::get('/',[App\Http\Controllers\IndexController::class, 'index']);
 Route::get('nosotros',[App\Http\Controllers\Webpage\AboutUsController::class, 'showAboutUS']);
+Route::get('galeria',[App\Http\Controllers\Webpage\GalleryController::class, 'showGallery']);
+
+Route::get('servicios!=diseno_web',[App\Http\Controllers\Webpage\ServicesController::class, 'showWebDesign']);
+Route::get('servicios!=marketing_digital',[App\Http\Controllers\Webpage\ServicesController::class, 'showDigitalMarketing']);
