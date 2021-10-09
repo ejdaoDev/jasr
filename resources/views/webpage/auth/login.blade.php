@@ -33,7 +33,7 @@
                     <div class="row">
 
                         <!-- <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>  -->
-                        <div class="col-lg-6 d-none d-lg-block"><img src="assets/jasr/images/logo2.png" style="width: 420px; height: 420px; margin-left: 70px; margin-top: 20px;"></div>
+                        <div class="col-lg-6 d-none d-lg-block"><img src="assets/favicon/logo2.png" style="width: 420px; height: 420px; margin-left: 70px; margin-top: 20px;"></div>
 
 
                         <div class="col-lg-6">

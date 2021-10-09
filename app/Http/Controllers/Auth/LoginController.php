@@ -15,7 +15,7 @@ class LoginController extends Controller {
     }
 
     public function showFormLogin() {
-        return view("jasr.auth.login");
+        return view("webpage.auth.login");
     }
 
     public function login(Request $request) {

@@ -11,11 +11,11 @@ class ServicesController extends Controller {
     }
 
     public function showWebDesign() {
-        return view('webpage.services.WebDesign');
+        return view('webpage.services.webDesign');
     }    
         
     public function showDigitalMarketing() {
-        return view('webpage.services.DigitalMarketing');
+        return view('webpage.services.digitalMarketing');
     }
 
 }
