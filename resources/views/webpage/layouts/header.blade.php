@@ -68,7 +68,7 @@
                                 </ul>
                             </div>
                             <div class="button">
-                                <a href="#call-action" class="btn white-bg mouse-dir">Consigue una cotización<span
+                                <a href="nosotros" class="btn white-bg mouse-dir">Consigue una cotización<span
                                         class="dir-part"></span></a>
                             </div>
                         </nav>

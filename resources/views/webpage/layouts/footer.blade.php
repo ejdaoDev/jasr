@@ -89,3 +89,13 @@
         </div>
 
     </footer>
+
+ <div class="whatsap">
+        <a href="https://api.whatsapp.com/send?phone=3145092423&text=Hola%21%20Quisiera%20m%C3%A1s%20informació%C3%B3n%20sobre%20ustedes%." class="float" target="_blank">
+            <i class="lni lni-whatsapp my-float"></i>
+        </a>
+    </div>
+
+    <a href="#" class="scroll-top btn-hover">
+        <i class="lni lni-chevron-up"></i>
+    </a>
