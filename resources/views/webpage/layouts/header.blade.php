@@ -28,10 +28,10 @@
                                             aria-controls="navbarSupportedContent" aria-expanded="false"
                                             aria-label="Toggle navigation" id="servicios">Servicios</a>
                                         <ul class="sub-menu collapse" id="submenu-1-2">
-                                            <li class="page-scroll"><a onclick="selected('servicios')" href="servicios!=diseno_web" id="diseno_web">Diseño Web</a></li>
-                                            <li class="page-scroll"><a onclick="selected('servicios')" href="servicios!=tu_propio_software" id="tu_propio_software">Tu Propio Software</a></li>
-                                            <li class="page-scroll"><a onclick="selected('servicios')" href="servicios!=marketing_digital" id="marketing_digital">Marketing Digital</a></li>
-                                            <li class="page-scroll"><a onclick="selected('servicios')" href="servicios!=consultorias" id="consultoria">Consultorías</a></li>
+                                            <li class="nav-item" id="diseno_web"><a onclick="selected('servicios'), subselected('diseno_web')" href="servicios!=diseno_web">Diseño Web</a></li>
+                                            <li class="nav-item" id="tu_propio_software"><a onclick="selected('servicios'), subselected('tu_propio_software')" href="servicios!=tu_propio_software">Tu Propio Software</a></li>
+                                            <li class="nav-item" id="marketing_digital"><a onclick="selected('servicios'), subselected('marketing_digital')" href="servicios!=marketing_digital">Marketing Digital</a></li>
+                                            <li class="nav-item" id="consultoria"><a onclick="selected('servicios'), subselected('consultoria')" href="servicios!=consultorias">Consultorías</a></li>
                                             
                                         </ul>
                                     </li>
@@ -44,7 +44,7 @@
                                             aria-controls="navbarSupportedContent" aria-expanded="false"
                                             aria-label="Toggle navigation" id="blog">Blog</a>
                                         <ul class="sub-menu collapse" id="submenu-1-4">
-                                            <li class="nav-item"><a onclick="selected('blog')" href="blogs!=2021">2021</a></li>
+                                            <li class="nav-item" id="2021"><a onclick="selected('blog'),subselected('2021')" href="blogs!=2021">2021</a></li>
                                            
                                         </ul>
                                     </li>

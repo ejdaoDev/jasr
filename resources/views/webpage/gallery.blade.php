@@ -5,11 +5,11 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="portfolio-btn-wrapper wow fadeInUp" data-wow-delay=".4s">
-                            <button class="portfolio-btn active" onclick="selected('all')" data-filter="*" id="all">Todos</button>
-                            <button class="portfolio-btn" onclick="selected('branding')" data-filter=".branding" id="branding">Marca</button>
-                            <button class="portfolio-btn" onclick="selected('marketing')" data-filter=".marketing" id="marketing">Marketing</button>
-                            <button class="portfolio-btn" onclick="selected('web')" data-filter=".web" id="web">Diseño web</button>
-                            <button class="portfolio-btn" onclick="selected('graphic')" data-filter=".graphic" id="graphic">Diseño audiovisual</button>
+                            <button class="portfolio-btn active" onclick="selectedItem('all')" data-filter="*" id="all">Todos</button>
+                            <button class="portfolio-btn" onclick="selectedItem('branding')" data-filter=".branding" id="branding">Marca</button>
+                            <button class="portfolio-btn" onclick="selectedItem('marketing')" data-filter=".marketing" id="marketing">Marketing</button>
+                            <button class="portfolio-btn" onclick="selectedItem('web')" data-filter=".web" id="web">Diseño web</button>
+                            <button class="portfolio-btn" onclick="selectedItem('graphic')" data-filter=".graphic" id="graphic">Diseño audiovisual</button>
                         </div>
                     </div>
                 </div>

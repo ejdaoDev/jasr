@@ -25,7 +25,7 @@
                                 ¡vamos contáctanos!
                             </p>
                             <div class="button wow fadeInUp" data-wow-delay=".9s">
-                                <a href="servicios!=diseno_web" class="btn mouse-dir"  onclick="selected('servicios')">Descubrir más <span
+                                <a href="servicios!=diseno_web" onclick="selected('servicios'),subselected('diseno_web')" class="btn mouse-dir">Descubrir más <span
                                         class="dir-part"></span></a>
                             </div>
                         </div>
@@ -36,7 +36,7 @@
                                     Obtener en tiempo real los ingresos y egresos de su empresa.<br>  
                                 <br>.
                             <div class="button">
-                                <a href="about-us.html" class="btn mouse-dir">Descubrir más <span
+                                <a href="servicios!=tu_propio_software" onclick="selected('servicios'),subselected('tu_propio_software')" class="btn mouse-dir">Descubrir más <span
                                         class="dir-part"></span></a>
                             </div>
                         </div>
@@ -47,7 +47,7 @@
                                     Obtener en tiempo real los ingresos y egresos de su empresa.<br>  
                                 <br>.
                             <div class="button">
-                                <a href="about-us.html" class="btn mouse-dir">Descubrir más <span
+                                <a href="servicios!=marketing_digital" onclick="selected('servicios'),subselected('marketing_digital')" class="btn mouse-dir">Descubrir más <span
                                         class="dir-part"></span></a>
                             </div>
                         </div>
@@ -61,7 +61,7 @@
                                 <br> 
                                 <br></p>
                             <div class="button">
-                                <a href="about-us.html" class="btn mouse-dir">Descubrir más <span
+                                <a href="servicios!=consultorias" onclick="selected('servicios'),subselected('consultoria')" class="btn mouse-dir">Descubrir más <span
                                         class="dir-part"></span></a>
                             </div>
                         </div>

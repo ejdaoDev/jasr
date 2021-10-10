@@ -14,7 +14,7 @@ class AdminMiddleware
      */
     public function handle($request, Closure $next)
     {
-        if(auth()->user()->role_id != 1){
+        if(auth()->user()->role->name != 'ADMIN'){
             return back();
         }
          return $next($request);
