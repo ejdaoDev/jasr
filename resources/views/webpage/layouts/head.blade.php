@@ -30,3 +30,4 @@
     <script src="assets/webpage/js/imagesloaded.min.js"></script>
     <script src="assets/webpage/js/isotope.min.js"></script>
     <script src="assets/webpage/js/main.js"></script>
+    <script src="js/main.js"></script>

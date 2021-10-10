@@ -34,7 +34,7 @@
                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="mr-2 d-none d-lg-inline  small" style="color: white; font-family: cursive;">Admin</span>
                 <img class="img-profile rounded-circle"
-                     src="assets/webpages/demo/images/user.png">
+                     src="assets/dashboard/img/user.png">
             </a>
             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                  aria-labelledby="userDropdown">

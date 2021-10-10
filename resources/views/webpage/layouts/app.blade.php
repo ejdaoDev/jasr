@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <meta name="turbolinks-cache-control" content="no-cache">
 
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
@@ -37,12 +38,10 @@
     <script src="assets/webpage/js/imagesloaded.min.js"></script>
     <script src="assets/webpage/js/isotope.min.js"></script>
     <script src="assets/webpage/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/livewire/turbolinks@v0.1.x/dist/livewire-turbolinks.js" data-turbolinks-eval="false"></script>
     </head>
     
     <body>
-    @include('webpage.layouts.header')
-    @yield('content')    
+    @include('webpage.layouts.header')   
     <script src="{{ asset("js/app.js")}}"></script>
-    
-    </body>
     

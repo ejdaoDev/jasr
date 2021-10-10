@@ -51,15 +51,15 @@
                         @foreach($users as $user)
                         <tr>                                                
                             <td>{{$user->id}}</td>
-                            <td>{{$user->names}}</td>
-                            <td>{{$user->lastnames}}</td>
+                            <td>{{$user->firstname}} {{$user->secondname}}</td>
+                            <td>{{$user->firstlastname}} {{$user->secondlastname}}</td>
                             <td>{{$user->email}}</td>
                             <td>{{$user->role->name}}</td>                                                                           
                             @if($user->active == true)      
-                                <td><a href="inactivateUser/{{$user->id}}"> <img src="assets/webpages/demo/images/activo.png" style="width: 60px; height: 50px; margin-left: 10px;"></td>
+                                <td><a href="inactivateUser/{{$user->id}}"> <img src="assets/dashboard/img/activo.png" style="width: 60px; height: 50px; margin-left: 10px;"></td>
                             @endif
                             @if($user->active == false)      
-                                <td><a href="activateUser/{{$user->id}}"> <img src="assets/webpages/demo/images/inactivo.png" style="width: 60px; height: 50px; margin-left: 10px;"></td>
+                                <td><a href="activateUser/{{$user->id}}"> <img src="assets/dashboard/img/inactivo.png" style="width: 60px; height: 50px; margin-left: 10px;"></td>
                             @endif
                         </tr>
                         @endforeach

@@ -1,22 +1,7 @@
-<!DOCTYPE html>
-<html class="no-js" lang="es">
+@include('webpage.layouts.app')
 
-<head>    
-    <title>Diseño Web</title>
-    <meta name="description" content="" />   
+@include('webpage.layouts.br')
     
-    @include('webpage.layouts.head')
-    
-</head>
+@include('webpage.layouts.footer')
 
-<body>
-
-    @include('webpage.layouts.header')   
-    
-    @include('webpage.layouts.br')    
-    
-    @include('webpage.layouts.footer')
-
-</body>
-</html>
 @include('webpage.js.JSindex')
