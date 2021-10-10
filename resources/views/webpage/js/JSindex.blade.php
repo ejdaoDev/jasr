@@ -7,44 +7,6 @@
 
 
 
-    //========= glightbox
-    GLightbox({
-        'href': 'REEL ALEXIS GUADA.mp4',
-        'type': 'video',
-        'source': 'local', //local
-        'width': 900,
-        'autoplayVideos': true
-    });
-
-    //====== Clients Logo Slider
-    tns({
-        container: '.client-logo-carousel',
-        slideBy: 'page',
-        autoplay: true,
-        autoplayButtonOutput: false,
-        mouseDrag: true,
-        gutter: 15,
-        nav: false,
-        controls: false,
-        responsive: {
-            0: {
-                items: 1
-            },
-            540: {
-                items: 2
-            },
-            768: {
-                items: 3
-            },
-            992: {
-                items: 4
-            },
-            1170: {
-                items: 6
-            }
-        }
-    });
-
     //======== Inicio Slider
     var slider = new tns({
         container: '.home-slider',
@@ -62,34 +24,6 @@
         responsive: {
             1200: {
                 items: 1
-            },
-            992: {
-                items: 1
-            },
-            0: {
-                items: 1
-            }
-
-        }
-    });
-
-    //======== Testimonial Slider
-    var slider = new tns({
-        container: '.testimonial-slider',
-        slideBy: 'page',
-        autoplay: false,
-        mouseDrag: true,
-        gutter: 0,
-        items: 1,
-        nav: true,
-        controls: false,
-        controlsText: [
-            '<i class="lni lni-arrow-left prev"></i>',
-            '<i class="lni lni-arrow-right next"></i>'
-        ],
-        responsive: {
-            1200: {
-                items: 2
             },
             992: {
                 items: 1

@@ -97,7 +97,6 @@
             <div class="col-lg-8 offset-lg-2 col-12">
                 <div class="section-title">
                     <h2 class="wow fadeInUp" data-wow-delay=".4s">Nuestros Servicios</h2>
-
                 </div>
             </div>
         </div>
@@ -214,6 +213,29 @@
         </div>
     </div>
 </section>   
+
+<!--<section class="client-logo-section">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 col-12">
+                <div class="section-title">
+                    <h2 class="wow fadeInUp" data-wow-delay=".4s">Algunos de Nuestros Clientes</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="client-logo-wrapper">
+                <div class="client-logo-carousel d-flex align-items-center justify-content-between">
+                    <div class="client-logo">
+                        <img src="assets/webpage/images/clients/blasting.png" alt="">
+                    </div>
+                    <div class="client-logo">
+                        <img src="assets/webpage/images/clients/mercapp.png" alt="">
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </section>-->
+
 
 @include('webpage.layouts.footer')
 

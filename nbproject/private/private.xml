@@ -12,12 +12,7 @@
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/webpage/routes/web.php</file>
-            <file>file:/C:/xampp/htdocs/webpage/app/Http/Controllers/IndexController.php</file>
             <file>file:/C:/xampp/htdocs/webpage/resources/views/webpage/index.blade.php</file>
-            <file>file:/C:/xampp/htdocs/webpage/routes/dashboard/security.php</file>
-            <file>file:/C:/xampp/htdocs/webpage/app/Http/Controllers/HomeController.php</file>
-            <file>file:/C:/xampp/htdocs/webpage/resources/views/dashboard/home.blade.php</file>
         </group>
     </open-files>
 </project-private>
