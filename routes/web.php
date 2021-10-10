@@ -16,5 +16,7 @@ Route::get('contactanos',[App\Http\Controllers\Webpage\ContactUsController::clas
 
 Route::get('blogs!=2021',[App\Http\Controllers\Webpage\BlogController::class, 'showBlogs2021']);
 
+Route::get('countVisitsIndex',[App\Http\Controllers\Webpage\Visits\VisitPageController::class, 'countVisit']);
+
 
 

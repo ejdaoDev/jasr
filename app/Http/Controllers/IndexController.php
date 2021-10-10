@@ -6,8 +6,7 @@ namespace App\Http\Controllers;
 class IndexController extends Controller
 {
      public function __construct() {    
-         $this->middleware('auth')->only("home");           
-        $this->middleware('admin')->only("home");
+
     }
     
     public function index()

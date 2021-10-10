@@ -1,4 +1,10 @@
 @include('webpage.layouts.app')
+<script type="text/javascript">
+        $.ajax({
+            url: 'countVisitsIndex',
+            method: 'GET'
+        }).done();
+</script>
 <section class="hero-slider">
 
     <div class="single-slider">
@@ -62,6 +68,10 @@
                                 <br></p>
                             <div class="button">
                                 <a href="servicios!=consultorias" onclick="selected('servicios'),subselected('consultoria')" class="btn mouse-dir">Descubrir más <span
+                                        class="dir-part"></span></a>
+                            </div>
+                             <div class="button">
+                                <a href="count" class="btn mouse-dir">count <span
                                         class="dir-part"></span></a>
                             </div>
                         </div>
