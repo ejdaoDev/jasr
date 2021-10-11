@@ -35,9 +35,11 @@
                                             
                                         </ul>
                                     </li>
-                                    <li class="nav-item">
+                                    
+                                    <!--<li class="nav-item">
                                         <a class="page-scroll" onclick="selected('galeria')" href="galeria" id="galeria">Galería</a>
                                     </li>
+                                    
                                     <li class="nav-item">
                                         <a class="page-scroll dd-menu collapsed" href="javascript:void(0)"
                                             data-bs-toggle="collapse" data-bs-target="#submenu-1-4"
@@ -45,9 +47,8 @@
                                             aria-label="Toggle navigation" id="blog">Blog</a>
                                         <ul class="sub-menu collapse" id="submenu-1-4">
                                             <li class="nav-item" id="2021"><a onclick="selected('blog'),subselected('2021')" href="blogs!=2021">2021</a></li>
-                                           
                                         </ul>
-                                    </li>
+                                    </li>-->
                                     <li class="nav-item">
                                         <a class="page-scroll" onclick="selected('contactanos')" href="contactanos" id="contactanos">Contactanos</a>
                                     </li>                                    
