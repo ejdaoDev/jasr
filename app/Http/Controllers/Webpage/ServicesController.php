@@ -11,7 +11,7 @@ class ServicesController extends Controller {
     }
 
     public function showWebDesign() {
-        return view('webpage.services.WebDesign');
+        return view('webpage.services.DesignWeb');
     }
     
     public function showYouOwnSoft() {
@@ -19,7 +19,7 @@ class ServicesController extends Controller {
     }
 
     public function showDigitalMarketing() {
-        return view('webpage.services.DigitalMarketing');
+        return view('webpage.services.MarketingDigital');
     }
     
     public function showConsultories() {
