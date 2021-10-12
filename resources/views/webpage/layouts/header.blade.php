@@ -4,9 +4,11 @@
                 <div class="col-lg-12">
                     <div class="nav-inner">
                         <nav class="navbar navbar-expand-lg">
-                            <a class="navbar-brand" href="./">
-                                <img src="assets/logoWithName.png" alt="Logo">
-                            </a>
+
+                            <!--<a class="navbar-brand" href="./">
+                                <img src="assets/logosinletras2.png" alt="Logo" style="width: 80px;">
+                            </a>-->
+                            
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">
