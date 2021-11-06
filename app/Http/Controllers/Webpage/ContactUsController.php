@@ -11,7 +11,8 @@ class ContactUsController extends Controller {
     }
 
     public function showContactUs() {
-        return view('webpage.contactUs');
+        $title = 'JASR | Contactanos';
+        return view('webpage.contactUs', compact('title'));
     }
 
 }

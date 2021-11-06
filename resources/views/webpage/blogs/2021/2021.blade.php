@@ -39,7 +39,7 @@
                                     <a href="#" class="meta-list"><i class="lni lni-calendar"></i><span>20 de Septiembre
                                             2021</span></a>
                                 </div>
-                                <h4 class="title"><a href="blogs!=2021!=proyecto_base_de_laravel_con_sb_admin">Proyecto base de laravel con Admin LTE</a></h4>
+                                <h4 class="title"><a href="blogs!=2021!=proyecto_base_de_laravel_con_admin_lte">Proyecto base de laravel con Admin LTE</a></h4>
                                 <p>Incluimos la plantilla SB Admin en un proyecto de laravel y le agregamos configuraciones adicionales 
                                 para facilitarte algo de trabajo al iniciar un nuevo proyecto.</p>
                                 <div class="button">
@@ -59,7 +59,7 @@
                                     <a href="#" class="meta-list"><i class="lni lni-calendar"></i><span>05 de Noviembre
                                             2021</span></a>
                                 </div>
-                                <h4 class="title"><a href="blogs!=2021!=proyecto_base_de_laravel_con_sb_admin">Dashboard gratuito con Angular Material</a></h4>
+                                <h4 class="title"><a href="blogs!=2021!=dashboard_gratuito_con_angular_material">Dashboard gratuito con Angular Material</a></h4>
                                 <p>Incluimos la plantilla SB Admin en un proyecto de laravel y le agregamos configuraciones adicionales 
                                 para facilitarte algo de trabajo al iniciar un nuevo proyecto.</p>
                                 <div class="button">

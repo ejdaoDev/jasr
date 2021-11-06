@@ -11,19 +11,23 @@ class ServicesController extends Controller {
     }
 
     public function showWebDesign() {
-        return view('webpage.services.DesignWeb');
+        $title = 'JASR | Diseño Web';
+        return view('webpage.services.DesignWeb', compact('title'));
     }
     
     public function showYouOwnSoft() {
-        return view('webpage.services.YouOwnSoft');
+        $title = 'JASR | Tu Propio Software';
+        return view('webpage.services.YouOwnSoft', compact('title'));
     }
 
     public function showDigitalMarketing() {
-        return view('webpage.services.MarketingDigital');
+        $title = 'JASR | Marketing Digital';
+        return view('webpage.services.MarketingDigital', compact('title'));
     }
     
     public function showConsultories() {
-        return view('webpage.services.Consultories');
+        $title = 'JASR | Consultorias';
+        return view('webpage.services.Consultories', compact('title'));
     }
 
 }

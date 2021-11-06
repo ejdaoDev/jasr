@@ -1,8 +1,8 @@
+
 <!DOCTYPE html>
 <html class="no-js" lang="es">
-
 <head>    
-    <title>JASR Desarrollo Web</title>
+    <title>{{$title}}</title>
     <meta name="description" content="" />
     
     <meta charset="utf-8" />
