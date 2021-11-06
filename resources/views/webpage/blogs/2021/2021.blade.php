@@ -31,7 +31,7 @@
 
                         <div class="letest-news-item wow fadeInUp col-lg-4 col-md-6 col-12" data-wow-delay=".6s">
                             <div class="image">
-                                <img src="assets/webpage/images/blog/file2020425965.jpg" alt="#">
+                                <img src="https://i.gyazo.com/d44de59264ed75b04db5684a1bcc5a51.png" alt="#">
                             </div>
                             <div class="content-body">
                                 <div class="meta-details">
@@ -39,11 +39,31 @@
                                     <a href="#" class="meta-list"><i class="lni lni-calendar"></i><span>20 de Septiembre
                                             2021</span></a>
                                 </div>
-                                <h4 class="title"><a href="blogs!=2021!=proyecto_base_de_laravel_con_sb_admin">Proyecto base de laravel con sb admin</a></h4>
+                                <h4 class="title"><a href="blogs!=2021!=proyecto_base_de_laravel_con_sb_admin">Proyecto base de laravel con Admin LTE</a></h4>
                                 <p>Incluimos la plantilla SB Admin en un proyecto de laravel y le agregamos configuraciones adicionales 
                                 para facilitarte algo de trabajo al iniciar un nuevo proyecto.</p>
                                 <div class="button">
-                                    <a class="btn mouse-dir white-bg" href="blogs!=2021!=proyecto_base_de_laravel_con_sb_admin">Leer Más <span
+                                    <a class="btn mouse-dir white-bg" href="blogs!=2021!=proyecto_base_de_laravel_con_admin_lte">Leer Más <span
+                                            class="dir-part"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    <div class="letest-news-item wow fadeInUp col-lg-4 col-md-6 col-12" data-wow-delay=".6s">
+                            <div class="image">
+                                <img src="https://i.gyazo.com/41967e617f7bd868da87e1b2024d1109.png" alt="#">
+                            </div>
+                            <div class="content-body">
+                                <div class="meta-details">
+                                    <a href="#" class="meta-list"><i class="lni lni-user"></i><span>Por Enrique de Armas</span></a>
+                                    <a href="#" class="meta-list"><i class="lni lni-calendar"></i><span>05 de Noviembre
+                                            2021</span></a>
+                                </div>
+                                <h4 class="title"><a href="blogs!=2021!=proyecto_base_de_laravel_con_sb_admin">Dashboard gratuito con Angular Material</a></h4>
+                                <p>Incluimos la plantilla SB Admin en un proyecto de laravel y le agregamos configuraciones adicionales 
+                                para facilitarte algo de trabajo al iniciar un nuevo proyecto.</p>
+                                <div class="button">
+                                    <a class="btn mouse-dir white-bg" href="blogs!=2021!=dashboard_gratuito_con_angular_material">Leer Más <span
                                             class="dir-part"></span></a>
                                 </div>
                             </div>

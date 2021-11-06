@@ -1,25 +1,13 @@
 @include('webpage.layouts.app')
 <script type="text/javascript">
-        $.ajax({
-            url: 'countVisitsIndex',
-            method: 'GET'
-        }).done();
+    $.ajax({
+        url: 'countVisitsIndex',
+        method: 'GET'
+    }).done();
 </script>
 <section class="hero-slider">
 
     <div class="single-slider">
-        <!--Tostadas
-        <div class="toast align-items-center bg-success text-white border-0" role="alert" aria-live="assertive"
-            aria-atomic="true" style="position: absolute; top: 20px; right: 20px; z-index: 1000;">
-            <div class="d-flex">
-                <div class="toast-body"> 
-                    Estas en línea, Bienvenido.
-                </div>
-                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
-                    aria-label="Close"></button>
-            </div>
-        </div>
-             Fin Tostadas-->
         <div class="container">
             <div class="row ">
                 <div class="col-lg-6 co-12">
@@ -31,43 +19,43 @@
                                 ¡vamos contáctanos!
                             </p>
                             <div class="button wow fadeInUp" data-wow-delay=".9s">
-                                <a href="servicios!=diseno_web" onclick="selected('servicios'),subselected('diseno_web')" class="btn mouse-dir">Descubrir más <span
+                                <a href="servicios!=diseno_web" onclick="selected('servicios'), subselected('diseno_web')" class="btn mouse-dir">Descubrir más <span
                                         class="dir-part"></span></a>
                             </div>
                         </div>
                         <div class="hero-text">                                
                             <h1 class="wow fadeInUp" data-wow-delay=".5s">Desarrollamos software a tu medida<br></h1>
                             <p class="wow fadeInUp" data-wow-delay=".7s"> Integre todas las áreas de su empresa 
-                                    mediante un Sistema ERP a medida. Administre de forma segura y eficiente todos los aspectos de su empresa.
-                                    Obtener en tiempo real los ingresos y egresos de su empresa.<br>  
+                                mediante un Sistema ERP a medida. Administre de forma segura y eficiente todos los aspectos de su empresa.
+                                Obtener en tiempo real los ingresos y egresos de su empresa.<br>  
                                 <br>.
                             <div class="button">
-                                <a href="servicios!=tu_propio_software" onclick="selected('servicios'),subselected('tu_propio_software')" class="btn mouse-dir">Descubrir más <span
+                                <a href="servicios!=tu_propio_software" onclick="selected('servicios'), subselected('tu_propio_software')" class="btn mouse-dir">Descubrir más <span
                                         class="dir-part"></span></a>
                             </div>
                         </div>
                         <div class="hero-text">                                
                             <h1 class="wow fadeInUp" data-wow-delay=".5s">Servicio de marketing digital<br></h1>
                             <p class="wow fadeInUp" data-wow-delay=".7s"> Integre todas las áreas de su empresa 
-                                    mediante un Sistema ERP a medida. Administre de forma segura y eficiente todos los aspectos de su empresa.
-                                    Obtener en tiempo real los ingresos y egresos de su empresa.<br>  
+                                mediante un Sistema ERP a medida. Administre de forma segura y eficiente todos los aspectos de su empresa.
+                                Obtener en tiempo real los ingresos y egresos de su empresa.<br>  
                                 <br>.
                             <div class="button">
-                                <a href="servicios!=marketing_digital" onclick="selected('servicios'),subselected('marketing_digital')" class="btn mouse-dir">Descubrir más <span
+                                <a href="servicios!=marketing_digital" onclick="selected('servicios'), subselected('marketing_digital')" class="btn mouse-dir">Descubrir más <span
                                         class="dir-part"></span></a>
                             </div>
                         </div>
                         <div class="hero-text">
                             <h1>Servicios de consultoría de software<br></h1>
                             <p>Brindamos soluciones con alto valor agregado que
-                                    facilitan la gestión de su organización hacia el logro 
-                                    de sus objetivos estratégicos. Asesoramos en temas referentes
-                                    a Tecnologías de Información; Como soluciones en integración
-                                    de hardware y software, gestión de proyectos posicionamiento y optimización.
+                                facilitan la gestión de su organización hacia el logro 
+                                de sus objetivos estratégicos. Asesoramos en temas referentes
+                                a Tecnologías de Información; Como soluciones en integración
+                                de hardware y software, gestión de proyectos posicionamiento y optimización.
                                 <br> 
                                 <br></p>
                             <div class="button">
-                                <a href="servicios!=consultorias" onclick="selected('servicios'),subselected('consultoria')" class="btn mouse-dir">Descubrir más <span
+                                <a href="servicios!=consultorias" onclick="selected('servicios'), subselected('consultoria')" class="btn mouse-dir">Descubrir más <span
                                         class="dir-part"></span></a>
                             </div>
                         </div>
@@ -212,31 +200,268 @@
             </div>
         </div>
     </div>
-</section>   
+</section>
 
-<!--<section class="client-logo-section">
+<section id="pricing" class="pricing-table section">
+    <div class="container">
         <div class="row">
             <div class="col-lg-8 offset-lg-2 col-12">
                 <div class="section-title">
-                    <h2 class="wow fadeInUp" data-wow-delay=".4s">Algunos de Nuestros Clientes</h2>
+                    <span class="wow fadeInDown" data-wow-delay=".2s">Tabla de Precios</span>
+                    <h2 class="wow fadeInUp" data-wow-delay=".4s">Nuestro plan de precios</h2>
+                    <p class="wow fadeInUp" data-wow-delay=".6s"><b>Todos los precios varían dependiendo de la
+                            necesidad de su marca o empresa.</b></p>
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="client-logo-wrapper">
-                <div class="client-logo-carousel d-flex align-items-center justify-content-between">
-                    <div class="client-logo">
-                        <img src="assets/webpage/images/clients/blasting.png" alt="">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-12">
+
+                <div class="single-table wow fadeInUp" data-wow-delay=".7s">
+                    <p class="popular">Popular</p>
+
+                    <div class="table-head">
+                        <h4 class="title">Web informativa<span></span></h4>
+                        <div class="price">
+                            <p class="amount"><span class="curency">$</span>187.72<span class="duration"><b>/usd</b></span></p>
+                        </div>
                     </div>
-                    <div class="client-logo">
-                        <img src="assets/webpage/images/clients/mercapp.png" alt="">
-                    </div>                    
+
+                    <ul class="table-list">
+                        <li>✔pagina web personalizada</li>
+                        <li>✔4 Secciones internas</li>
+                        <li>✔Inclusión de imágenes y videos</li>
+                        <li>✔formulario de contacto</li>
+                        <li>✔Integración con Google Maps</li>
+                        <li>✔Chat Online (nativo o WhatsApp)</li>
+                        <li>✔Integración con Redes Sociales</li>
+                        <li>✔Diseño responsive</li>
+                    </ul>
+                    <div class="button">
+                        <a class="btn white-bg mouse-dir" href="#">Empezar <span class="dir-part"></span></a>
+
+                    </div>
+
                 </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+
+                <div class="single-table wow fadeInUp" data-wow-delay=".5s">
+
+                    <div class="table-head">
+                        <h4 class="title">Basico<span></span></h4>
+                        <div class="price">
+                            <p class="amount"><span class="curency">$</span>190.59<span class="duration"><b>/usd</b></span></p>
+                        </div>
+                    </div>
+
+                    <ul class="table-list">
+                        <li>✔SEO Amigable</li>
+                        <li>✔pagina web personalizada</li>
+                        <li>✔6 Secciones internas</li>
+                        <li>✔Inclusión de imágenes y videos</li>
+                        <li>✔formulario de contacto</li>
+                        <li>✔Integración con Google Maps</li>
+                        <li>✔Chat Online (nativo o WhatsApp)</li>
+                        <li>✔Integración con Redes Sociales</li>
+                        <li>✔Diseño responsive</li>
+
+                    </ul>
+                    <div class="button">
+                        <a class="btn white-bg mouse-dir" href="#">Empezar <span class="dir-part"></span></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-12">
+
+
+
+                <div class="single-table wow fadeInUp" data-wow-delay=".9s">
+
+
+                    <div class="table-head">
+                        <h4 class="title">Plan intermedio<span></span></h4>
+                        <div class="price">
+                            <p class="amount"><span class="curency">$</span>408.41<span class="duration"><b>/usd</b></span></p>
+                        </div>
+                    </div>
+
+                    <ul class="table-list">
+                        <li>✔SEO Amigable</li>
+                        <li>✔Hasta 12 pestrañas</li>
+                        <li>✔Secciones Ilimitadas</li>
+                        <lI>✔4Secciones administrables</lI>
+                        <li>✔Diseño responsive</li>
+                        <li>✔Hosting x1 año</li>
+                        <li>✔Dominio gratis x1 año</li>
+                        <li>✔Inclusión de imágenes y videos</li>
+                        <li>✔Enlace a las redes sociales</li>
+                        <li>✔Blog</li>
+                        <li>✔Chat Online (nativo o WhatsApp)</li>
+                        <span id="readMore">
+                            <li>✔Optimización de velocidad</li>
+                            <li>✔Formulario suscripción a boletines</li>
+                            <li>✔Integración con Google Maps</li>
+                            <li>✔Formulario de contacto</li>
+                            <li>✔Cuentas de correo corporativo</li>
+                            <li>✔Capacitación de uso</li>
+                        </span>
+                    </ul>
+                    <div class="button">
+                        <a class="btn white-bg mouse-dir" href="#">Empezar <span class="dir-part"></span></a>
+                    </div>
+                    <button class="btn white-bg" id="button">Leer Más</button>
+
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+
+                <div class="single-table wow fadeInUp" data-wow-delay=".7s">
+                    <p class="popular">Popular</p>
+
+                    <div class="table-head">
+                        <h4 class="title">Plan Premiun <span></span></h4>
+                        <div class="price">
+                            <p class="amount"><span class="curency">$</span>762.37<span class="duration"><b>/usd</b></span></p>
+                        </div>
+                    </div>
+
+                    <ul class="table-list">
+                        <li>✔SEO Amigable</li>
+                        <li>✔Hasta 20 Pestañas</li>
+                        <li>✔Desarrollo Web personalizado</li>
+                        <li>✔Secciones internas modificables</li>
+                        <li>✔Formularios contacto y registro</li>
+                        <lI>✔8 Secciones administrables</lI>
+                        <li>Secciones Ilimitadas</li>
+                        <li>✔Inclusión de imágenes y videos</li>
+                        <li>✔Integración con Redes Sociales</li>
+                        <li>✔Integración con Google Maps</li>
+                        <span id="dots">...</span>
+                        <span id="more">
+                            <li>✔Dominio gratis x 1 año</li>
+                            <li>✔Certificado SSL x 1 año</li>
+                            <li>✔Chat Online (nativo o WhatsApp)</li>
+                            <li>✔Diseño responsive</li>
+                            <li>✔Módulo de blog</li>
+                            <li>✔Catálogo de productos</li>
+                            <li>✔Carrito de compras</li>
+                            <li>✔Pasarela de pago</li>
+                            <li>✔Optimización de velocidad</li>
+                            <li>✔Muestra previa de interfaces</li>
+                            <li>✔Capacitación de uso</li>
+                        </span>
+                    </ul>
+                    <div class="button">
+                        <a class="btn white-bg mouse-dir" href="#">Empezar <span class="dir-part"></span></a>
+                    </div>
+                    <button class="btn white-bg" onclick="myFunction()" id="myBtn">Leer Más</button>
+                </div>
+
             </div>
         </div>
-    </section>-->
+    </div>
+</section>
+
+<div class="latest-news-area section">
+    <div class="letast-news-grid">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 col-12">
+                    <div class="section-title">
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Ultimos Blogs</h2>
+                        <p class="wow fadeInUp" data-wow-delay=".6s"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="latest-news-area section" style="margin-top: -50px;">
+                <div class="letast-news-grid">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 offset-lg-2 col-12">
+                            </div>
+                        </div>
+                        <div class="row" class="col-lg-12 col-md-6 col-12">
+
+                            <div class="letest-news-item wow fadeInUp col-lg-4 col-md-6 col-12" data-wow-delay=".4s">
+                                <div class="image">
+                                    <img src="assets/webpage/images/blog/file2020425964.jpg" alt="#">
+                                </div>
+                                <div class="content-body">
+                                    <div class="meta-details">
+                                        <a href="#" class="meta-list"><i class="lni lni-user"></i><span>Por Enrique de Armas</span></a>
+                                        <a href="#" class="meta-list"><i class="lni lni-calendar"></i><span>15 de Agosto
+                                                2021</span></a>
+                                    </div>
+                                    <h4 class="title"><a href="blogs!=2021!=como_subir_imagenes_desde_front_laravel_a_back_laravel">¿como subir imagenes desde front laravel a back laravel?</a></h4>
+                                    <p>En este segmento explicamos de manera corta y eficiente como subir imagenes desd el front en laraval a un back en laravel,
+                                        suponiendo que quieres trabajar el front y el back con el mismo framework.</p>
+                                    <div class="button">
+                                        <a class="btn mouse-dir white-bg" href="blogs!=2021!=como_subir_imagenes_desde_front_laravel_a_back_laravel">Leer Más <span
+                                                class="dir-part"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="letest-news-item wow fadeInUp col-lg-4 col-md-6 col-12" data-wow-delay=".6s">
+                                <div class="image">
+                                    <img src="https://i.gyazo.com/d44de59264ed75b04db5684a1bcc5a51.png" alt="#">
+                                </div>
+                                <div class="content-body">
+                                    <div class="meta-details">
+                                        <a href="#" class="meta-list"><i class="lni lni-user"></i><span>Por Enrique de Armas</span></a>
+                                        <a href="#" class="meta-list"><i class="lni lni-calendar"></i><span>20 de Septiembre
+                                                2021</span></a>
+                                    </div>
+                                    <h4 class="title"><a href="blogs!=2021!=proyecto_base_de_laravel_con_sb_admin">Proyecto base de laravel con Admin LTE</a></h4>
+                                    <p>Incluimos la plantilla SB Admin en un proyecto de laravel y le agregamos configuraciones adicionales 
+                                        para facilitarte algo de trabajo al iniciar un nuevo proyecto.</p>
+                                    <div class="button">
+                                        <a class="btn mouse-dir white-bg" href="blogs!=2021!=proyecto_base_de_laravel_con_admin_lte">Leer Más <span
+                                                class="dir-part"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="letest-news-item wow fadeInUp col-lg-4 col-md-6 col-12" data-wow-delay=".6s">
+                                <div class="image">
+                                    <img src="https://i.gyazo.com/41967e617f7bd868da87e1b2024d1109.png" alt="#">
+                                </div>
+                                <div class="content-body">
+                                    <div class="meta-details">
+                                        <a href="#" class="meta-list"><i class="lni lni-user"></i><span>Por Enrique de Armas</span></a>
+                                        <a href="#" class="meta-list"><i class="lni lni-calendar"></i><span>05 de Noviembre
+                                                2021</span></a>
+                                    </div>
+                                    <h4 class="title"><a href="blogs!=2021!=proyecto_base_de_laravel_con_sb_admin">Dashboard gratuito con Angular Material</a></h4>
+                                    <p>Incluimos la plantilla SB Admin en un proyecto de laravel y le agregamos configuraciones adicionales 
+                                        para facilitarte algo de trabajo al iniciar un nuevo proyecto.</p>
+                                    <div class="button">
+                                        <a class="btn mouse-dir white-bg" href="blogs!=2021!=dashboard_gratuito_con_angular_material">Leer Más <span
+                                                class="dir-part"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
+        </div>
+    </div>
+
+    <div class="button" style="text-align: center;">
+        <a class="btn mouse-dir white-bg" href="blogs!=2021">IR AL BLOG<span
+                class="dir-part"></span></a>
+    </div>
+</div>
 @include('webpage.layouts.footer')
 
 @include('webpage.js.JSindex')
