@@ -33,7 +33,7 @@
 };
 
 turbolinksPersistScroll();*/
-
+/*
  document.addEventListener('turbolinks:before-visit', () => {
      Turbolinks.clearCache();
      console.log("Limpiando Caché...");
@@ -43,7 +43,7 @@ document.addEventListener('turbolinks:render', () => {
     console.log("subiendo al top...");
 
   });
-
+*/
 
 /*console.log("subiendo al Top");
 Turbolinks.scroll = {};

@@ -38,8 +38,8 @@
         <script src="assets/webpage/js/imagesloaded.min.js"></script>
         <!--<script src="assets/webpage/js/isotope.min.js"></script>-->
         <script src="assets/webpage/js/main.js"></script>
-        <script src="{{ asset("js/app.js")}}"></script>
-        <script src="{{ asset("js/scrollTo.js")}}"></script>
+        <!--<script src="{{ asset("js/app.js")}}"></script>
+        <script src="{{ asset("js/scrollTo.js")}}"></script>-->
     </head>    
     <body>
         @include('webpage.layouts.header')
