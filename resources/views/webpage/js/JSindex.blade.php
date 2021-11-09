@@ -36,7 +36,7 @@
     });
 
     //============== mampostería de isótopos js con imágenes cargadas
-    imagesLoaded('#container', function () {
+    /*imagesLoaded('#container', function () {
         var elem = document.querySelector('.grid');
         var iso = new Isotope(elem, {
             // opciones
@@ -57,5 +57,5 @@
                 });
             })
         );
-    });
+    });*/
 </script>

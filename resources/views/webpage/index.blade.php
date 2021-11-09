@@ -1,6 +1,7 @@
 <?php $title="JASR | Inicio"; ?>
 @include('webpage.layouts.app')
 <script type="text/javascript">
+    document.onload= window.scrollTo(0,0);
     $.ajax({
         url: 'countVisitsIndex',
         method: 'GET'

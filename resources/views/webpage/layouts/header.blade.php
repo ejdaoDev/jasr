@@ -1,4 +1,4 @@
-<header class="header navbar-area">
+<header class="header navbar-area" data-turbolinks-permanent>
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-12">
