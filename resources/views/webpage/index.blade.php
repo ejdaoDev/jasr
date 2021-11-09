@@ -1,3 +1,4 @@
+<?php $title="JASR | Inicio"; ?>
 @include('webpage.layouts.app')
 <script type="text/javascript">
     $.ajax({

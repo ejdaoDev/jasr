@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html class="no-js" lang="es">
+
 <head>    
     <title>{{$title}}</title>
     <meta name="description" content="" />

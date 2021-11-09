@@ -10,9 +10,8 @@ class IndexController extends Controller
     }
     
     public function index()
-    {
-        $title = 'JASR | Inicio';
-        return view('webpage.index', compact('title'));        
+    {        
+        return view('webpage.index');        
     }   
     
    

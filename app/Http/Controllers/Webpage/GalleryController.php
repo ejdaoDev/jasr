@@ -11,8 +11,7 @@ class GalleryController extends Controller {
     }
 
     public function showGallery() {
-        $title = 'JASR | Galería';
-        return view('webpage.gallery', compact('title'));
+        return view('webpage.gallery');
     }
 
 }

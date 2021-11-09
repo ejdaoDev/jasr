@@ -1,5 +1,5 @@
 <script type="text/javascript">
-    if (document.location.href === ('http://localhost/webpage/public/')) {
+    if (document.location.href === ('http://localhost/jasr/public/')) {
         $('#inicio').toggleClass('page-scroll active');
     } else {
         $('#inicio').toggleClass('page-scroll');

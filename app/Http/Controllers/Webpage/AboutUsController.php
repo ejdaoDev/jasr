@@ -11,8 +11,7 @@ class AboutUsController extends Controller {
     }
 
     public function showAboutUs() {
-        $title = 'JASR | Nosotros';
-        return view('webpage.aboutUs', compact('title'));
+        return view('webpage.aboutUs');
     }
 
 }

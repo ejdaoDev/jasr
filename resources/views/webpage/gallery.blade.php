@@ -1,3 +1,4 @@
+<?php $title="JASR | Galería"; ?>
 @include('webpage.layouts.app')
 
 <section class="portfolio-section section" style="margin-top: -50px;">

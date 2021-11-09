@@ -1,3 +1,4 @@
+<?php $title="JASR | Blogs 2021"; ?>
 @include('webpage.layouts.app')
 
 <div class="latest-news-area section" style="margin-top: -50px;">

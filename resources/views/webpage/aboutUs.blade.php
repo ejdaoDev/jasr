@@ -1,3 +1,4 @@
+<?php $title="JASR | Sobre Nosotros"; ?>
 @include('webpage.layouts.app')
 <br>
 <div class="row" class="col-lg-12 col-md-6 col-12">
