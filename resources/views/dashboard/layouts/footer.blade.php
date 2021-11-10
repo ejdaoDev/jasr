@@ -1,28 +1,13 @@
- </div>
-<footer class="sticky-footer bg-white" id="myfooter">
-    <div class="container my-auto">
-                    <div class="copyright text-center my-auto" style="color: white; font-family: cursive;">
-                        <span>Developed by JASR Desarrollo Web</span>                      
-                    </div>
-                </div>    
-</footer>
-</div>
-</div>
+ <footer class="main-footer">
+    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Version</b> 3.2.0-rc
+    </div>
+  </footer>
 
-<!-- Scroll to Top Button-->
-<a class="scroll-to-top rounded" href="#page-top">
-    <i class="fas fa-angle-up"></i>
-</a>
-
-<script src="assets/dashboard/vendor/jquery/jquery.min.js"></script>
-<script src="assets/dashboard/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/dashboard/vendor/jquery-easing/jquery.easing.min.js"></script>
-<script src="assets/dashboard/js/sb-admin-2.min.js"></script>
-<script src="assets/dashboard/vendor/datatables/jquery.dataTables.min.js"></script>
-<script src="assets/dashboard/vendor/datatables/dataTables.bootstrap4.min.js"></script>
-<script src="assets/dashboard/js/demo/datatables-demo.js"></script>
-<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</div>
+<!-- ./wrapper -->
 
 </body>
-
 </html>

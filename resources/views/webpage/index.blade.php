@@ -368,7 +368,7 @@
         </div>
     </div>
 </section>
-
+<!--
 <div class="latest-news-area section">
     <div class="letast-news-grid">
         <div class="container">
@@ -463,7 +463,7 @@
         <a class="btn mouse-dir white-bg" href="blogs!=2021">IR AL BLOG<span
                 class="dir-part"></span></a>
     </div>
-</div>
+</div>-->
 @include('webpage.layouts.footer')
 
 @include('webpage.js.JSindex')
