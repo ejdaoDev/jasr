@@ -1,14 +1,14 @@
-<?php $title="JASR | Inicio"; ?>
+<?php $title = "JASR | Inicio"; ?>
 @include('webpage.layouts.app')
 <script type="text/javascript">
-    document.onload= window.scrollTo(0,0);
+    document.onload = window.scrollTo(0, 0);
     $.ajax({
         url: 'countVisitsIndex',
         method: 'GET'
     }).done();
 </script>
-<section class="hero-slider">
 
+<section id="inicio" class="hero-slider">
     <div class="single-slider">
         <div class="container">
             <div class="row ">
@@ -36,7 +36,7 @@
                                         class="dir-part"></span></a>
                             </div>
                         </div>
-                        <div class="hero-text">                                
+                        <!--<div class="hero-text">                                
                             <h1 class="wow fadeInUp" data-wow-delay=".5s">Servicio de marketing digital<br></h1>
                             <p class="wow fadeInUp" data-wow-delay=".7s"> Integre todas las áreas de su empresa 
                                 mediante un Sistema ERP a medida. Administre de forma segura y eficiente todos los aspectos de su empresa.
@@ -60,7 +60,7 @@
                                 <a href="servicios!=consultorias" onclick="selected('servicios'), subselected('consultoria')" class="btn mouse-dir">Descubrir más <span
                                         class="dir-part"></span></a>
                             </div>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
             </div>
@@ -68,6 +68,53 @@
     </div>
 
 </section>
+
+<section id="nosotros" class="Features section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-12">
+                <div class="feature-right wow fadeInUp" data-wow-delay=".3s">
+                    <div class="watch-inner">
+                        <div class="video-head wow zoomIn" data-wow-delay="0.4s"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+                <div class="feature-content">
+                    <div class="title">
+                        <h3 class="wow fadeInRight" data-wow-delay=".5s">Sobre Nosotros</h3>
+                    </div>
+                    <div data-wow-delay=".5s">
+
+                        <div class="banner-content">
+                            <p><b>JASR Desarrollo Web</b> nació un 8 de Julio de 2021 con la intención
+                                de abrirse paso en la industria del desarrollo de software, tomando su primer
+                                sede en Valledupar, Cesar.</p>
+                        </div>
+                    </div>
+                    <div data-wow-delay=".6s">
+                        <div class="banner-content"><br>
+                            <h3 class="title">MISION</h3>
+                            <p>Desarrollar software con altos estandares de calidad, escalable y facíl de mantener, garantizar 
+                                el exito de las campañas publicitarias de nuestros clientes y ser una marca que genere confíanza 
+                                entre ellos.</p>
+                        </div>
+                    </div>
+                    <div data-wow-delay=".7s">
+                        <div class="banner-content"><br>
+                            <h3 class="title">VISION</h3>
+                            <p>Para el 2026 nos vemos como un referente del desarrollo de software y el marketing digital en
+                                latinoamerica, empeñados en trabajar con los metodos de desarrollo mas novedosos y generar empleo a 
+                                nuevos desarrolladores.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 
 <div class="video-head wow zoomIn">
@@ -81,7 +128,7 @@
 </div>
 
 
-<section class="services section" style="margin-top: -25px;">
+<section id="servicios" class="services section" style="margin-top: -25px;">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 offset-lg-2 col-12">
@@ -209,14 +256,14 @@
         <div class="row">
             <div class="col-lg-8 offset-lg-2 col-12">
                 <div class="section-title">
-                    <span class="wow fadeInDown" data-wow-delay=".2s">Tabla de Precios</span>
                     <h2 class="wow fadeInUp" data-wow-delay=".4s">Nuestro plan de precios</h2>
-                    <p class="wow fadeInUp" data-wow-delay=".6s"><b>Todos los precios varían dependiendo de la
-                            necesidad de su marca o empresa.</b></p>
+                    <p class="wow fadeInUp" data-wow-delay=".6s"><b>Todos los precios varían dependiendo de su necesidad.</b></p>
                 </div>
             </div>
         </div>
+
         <div class="row">
+            <div class="col-lg-3 col-md-0 col-0"></div>
             <div class="col-lg-3 col-md-6 col-12">
 
                 <div class="single-table wow fadeInUp" data-wow-delay=".7s">
@@ -225,19 +272,18 @@
                     <div class="table-head">
                         <h4 class="title">Web informativa<span></span></h4>
                         <div class="price">
-                            <p class="amount"><span class="curency">$</span>187.72<span class="duration"><b>/usd</b></span></p>
+                            <p class="amount"><span class="curency">$</span>210<span class="duration"><b>/usd</b></span></p>
                         </div>
                     </div>
 
                     <ul class="table-list">
-                        <li>✔pagina web personalizada</li>
-                        <li>✔4 Secciones internas</li>
+                        <li>✔Pagina web personalizada</li>
+                        <li>✔Maximo 12 pestañas (estaticas)</li>
                         <li>✔Inclusión de imágenes y videos</li>
-                        <li>✔formulario de contacto</li>
-                        <li>✔Integración con Google Maps</li>
-                        <li>✔Chat Online (nativo o WhatsApp)</li>
+                        <li>✔Formulario de contacto</li>
                         <li>✔Integración con Redes Sociales</li>
-                        <li>✔Diseño responsive</li>
+                        <li>✔Diseño responsivo</li>
+                        <li>✔front/back en Laravel</li>
                     </ul>
                     <div class="button">
                         <a class="btn white-bg mouse-dir" href="#">Empezar <span class="dir-part"></span></a>
@@ -247,124 +293,42 @@
                 </div>
 
             </div>
-            <div class="col-lg-3 col-md-6 col-12">
 
-                <div class="single-table wow fadeInUp" data-wow-delay=".5s">
-
-                    <div class="table-head">
-                        <h4 class="title">Basico<span></span></h4>
-                        <div class="price">
-                            <p class="amount"><span class="curency">$</span>190.59<span class="duration"><b>/usd</b></span></p>
-                        </div>
-                    </div>
-
-                    <ul class="table-list">
-                        <li>✔SEO Amigable</li>
-                        <li>✔pagina web personalizada</li>
-                        <li>✔6 Secciones internas</li>
-                        <li>✔Inclusión de imágenes y videos</li>
-                        <li>✔formulario de contacto</li>
-                        <li>✔Integración con Google Maps</li>
-                        <li>✔Chat Online (nativo o WhatsApp)</li>
-                        <li>✔Integración con Redes Sociales</li>
-                        <li>✔Diseño responsive</li>
-
-                    </ul>
-                    <div class="button">
-                        <a class="btn white-bg mouse-dir" href="#">Empezar <span class="dir-part"></span></a>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="col-lg-3 col-md-6 col-12">
-
-
-
-                <div class="single-table wow fadeInUp" data-wow-delay=".9s">
-
-
-                    <div class="table-head">
-                        <h4 class="title">Plan intermedio<span></span></h4>
-                        <div class="price">
-                            <p class="amount"><span class="curency">$</span>408.41<span class="duration"><b>/usd</b></span></p>
-                        </div>
-                    </div>
-
-                    <ul class="table-list">
-                        <li>✔SEO Amigable</li>
-                        <li>✔Hasta 12 pestrañas</li>
-                        <li>✔Secciones Ilimitadas</li>
-                        <lI>✔4Secciones administrables</lI>
-                        <li>✔Diseño responsive</li>
-                        <li>✔Hosting x1 año</li>
-                        <li>✔Dominio gratis x1 año</li>
-                        <li>✔Inclusión de imágenes y videos</li>
-                        <li>✔Enlace a las redes sociales</li>
-                        <li>✔Blog</li>
-                        <li>✔Chat Online (nativo o WhatsApp)</li>
-                        <span id="readMore">
-                            <li>✔Optimización de velocidad</li>
-                            <li>✔Formulario suscripción a boletines</li>
-                            <li>✔Integración con Google Maps</li>
-                            <li>✔Formulario de contacto</li>
-                            <li>✔Cuentas de correo corporativo</li>
-                            <li>✔Capacitación de uso</li>
-                        </span>
-                    </ul>
-                    <div class="button">
-                        <a class="btn white-bg mouse-dir" href="#">Empezar <span class="dir-part"></span></a>
-                    </div>
-                    <button class="btn white-bg" id="button">Leer Más</button>
-
-                </div>
-
-            </div>
             <div class="col-lg-3 col-md-6 col-12">
 
                 <div class="single-table wow fadeInUp" data-wow-delay=".7s">
                     <p class="popular">Popular</p>
 
                     <div class="table-head">
-                        <h4 class="title">Plan Premiun <span></span></h4>
+                        <h4 class="title">Web Especializada <span></span></h4>
                         <div class="price">
-                            <p class="amount"><span class="curency">$</span>762.37<span class="duration"><b>/usd</b></span></p>
+                            <p class="amount"><span class="curency">$</span>380<span class="duration"><b>/usd</b></span></p>
                         </div>
                     </div>
 
                     <ul class="table-list">
-                        <li>✔SEO Amigable</li>
-                        <li>✔Hasta 20 Pestañas</li>
-                        <li>✔Desarrollo Web personalizado</li>
-                        <li>✔Secciones internas modificables</li>
-                        <li>✔Formularios contacto y registro</li>
-                        <lI>✔8 Secciones administrables</lI>
-                        <li>Secciones Ilimitadas</li>
+                        <li>✔Pagina web personalizada</li>
+                        <li>✔Hasta 20 pestañas (las pestañas pueden ser editadas)</li>
                         <li>✔Inclusión de imágenes y videos</li>
+                        <li>✔Formulario de contacto</li>
                         <li>✔Integración con Redes Sociales</li>
-                        <li>✔Integración con Google Maps</li>
-                        <span id="dots">...</span>
+                        <li>✔Diseño responsivo</li>
                         <span id="more">
-                            <li>✔Dominio gratis x 1 año</li>
-                            <li>✔Certificado SSL x 1 año</li>
-                            <li>✔Chat Online (nativo o WhatsApp)</li>
-                            <li>✔Diseño responsive</li>
-                            <li>✔Módulo de blog</li>
-                            <li>✔Catálogo de productos</li>
-                            <li>✔Carrito de compras</li>
-                            <li>✔Pasarela de pago</li>
-                            <li>✔Optimización de velocidad</li>
-                            <li>✔Muestra previa de interfaces</li>
-                            <li>✔Capacitación de uso</li>
+                            <li>✔front con Angular y back con Nest.js o Node.js </li>
+                            <li>✔Gestión por sesiones</li>
+                            <li>✔Dashboard</li>
+                            <li>✔Sección "blogs" incluida por defecto</li>
                         </span>
                     </ul>
+                    <button class="btn white-bg" onclick="myFunction()" id="myBtn">Leer Más</button>
                     <div class="button">
                         <a class="btn white-bg mouse-dir" href="#">Empezar <span class="dir-part"></span></a>
                     </div>
-                    <button class="btn white-bg" onclick="myFunction()" id="myBtn">Leer Más</button>
+                    <span id="dots" style="visibility: hidden;">...</span>
                 </div>
 
             </div>
+            <div class="col-lg-3 col-md-0 col-0"></div>
         </div>
     </div>
 </section>
@@ -464,6 +428,53 @@
                 class="dir-part"></span></a>
     </div>
 </div>-->
+<section id="contactanos" class="call-action section overlay">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-12 wow fadeInLeft" data-wow-delay=".3s">
+                <div class="section-title">
+                    <span>Conozcanos</span>
+                    <h2>Nosotros somos muy <br>Buenos<br> Impulsando su <br>negocio</h2>
+                    <p>Descubrir más</p>
+                </div>
+                <div class="button section-button">
+                    <a href="about-us.html" class="btn mouse-dir">Descubrir más<span class="dir-part"></span></a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12 wow fadeInRight" data-wow-delay=".4s">
+                <div class="right-form">
+                    <div class="section-heading">
+                        <h4><span>Contacta con nosotros</span></h4>
+                    </div>
+                    <div class="contact-form-box ">
+                        <form method="post" action="send-mail" class="mailform"> @csrf
+                            <div class="row">
+                                <div class="col-12">
+                                    <input type="text" name="name" placeholder="Tu Nombre">
+                                </div>
+                                <div class="col-lg-6 col-12">
+                                    <input type="email" name="email" placeholder="Tu correo">
+                                </div>
+                                <div class="col-lg-6 col-12">
+                                    <input type="text" name="phone" placeholder="Tu Número">
+                                </div>
+                                <div class="col-12">
+                                    <textarea name="message" rows="5" placeholder="Tu Mensage"></textarea>
+                                </div>
+                                <div class="button col-12">
+                                    <button type="submit" class="btn white-bg mouse-dir">Enviar<span
+                                            class="dir-part"></span></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 @include('webpage.layouts.footer')
 
 @include('webpage.js.JSindex')
+
+

@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::post('send-mail', [App\Http\Controllers\HomeController::class, 'sendMail']);
+
 Route::get('home', [App\Http\Controllers\HomeController::class, 'home']);
 Route::get('create-user',[App\Http\Controllers\Dashboard\Security\UserController::class, 'showFormCreateUser']);
 Route::post('create-user',[App\Http\Controllers\Dashboard\Security\UserController::class, 'CreateUser']);

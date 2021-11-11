@@ -19,7 +19,7 @@
                         <h4><span>Contacta con nosotros</span></h4>
                     </div>
                     <div class="contact-form-box ">
-                        <form method="post" action="#" class="mailform">
+                        <form method="post" action="send-mail" class="mailform"> @csrf
                             <div class="row">
                                 <div class="col-12">
                                     <input type="text" name="name" placeholder="Tu Nombre">
