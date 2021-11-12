@@ -1,4 +1,4 @@
-<?php $title = "JASR | Inicio"; ?>
+<?php $title = "JASR Desarrollo Web"; ?>
 @include('webpage.layouts.app')
 <script type="text/javascript">
     document.onload = window.scrollTo(0, 0);
@@ -251,7 +251,7 @@
     </div>
 </section>
 
-<section id="pricing" class="pricing-table section">
+<section id="precios" class="pricing-table section">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 offset-lg-2 col-12">

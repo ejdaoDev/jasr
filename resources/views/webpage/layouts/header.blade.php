@@ -27,6 +27,9 @@
                                     <li class="nav-item">
                                         <a class="page-scroll" href="./#servicios">Servicios</a>
                                     </li>                                    
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="./#precios">Precios</a>
+                                    </li>                                    
                                     <!--<li class="nav-item">
                                         <a class="page-scroll dd-menu collapsed" href="#servicios"
                                             data-bs-toggle="collapse" data-bs-target="#submenu-1-2"
