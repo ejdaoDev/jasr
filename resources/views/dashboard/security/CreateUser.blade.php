@@ -101,7 +101,7 @@
                                 Confirmar password*
                                 <input type="password" class="form-control" name="password_confirmation" maxlength="20"></div>
                         </div>
-                        <button class="btn btn-user btn-primary btn-block" type="submit">Registrar</button>
+                        <button class="btn btn-user btn-primary btn-block" type="submit" data-turbolinks="false">Registrar</button>
                         <button class="btn btn-user btn-secondary btn-block" type="reset">Limpiar</button>
                         <hr>
                     </form>
@@ -111,5 +111,3 @@
     </section><br>
 </div>
 @include('dashboard.layouts.footer')
-
-

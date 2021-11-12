@@ -54,10 +54,10 @@
                                     <td>{{$user->email}}</td>
                                     <td>{{$user->role->name}}</td>                                                                           
                                     @if($user->active == true)      
-                                    <td><a href="inactivateUser/{{$user->id}}"> <img src="assets/dashboard/img/activo.png" style="width: 60px; height: 50px; margin-left: 10px;"></td>
+                                    <td><a href="inactivateUser/{{$user->id}}" data-turbolinks="false"> <img src="assets/dashboard/img/activo.png" style="width: 60px; height: 50px; margin-left: 10px;"></td>
                                             @endif
                                             @if($user->active == false)      
-                                    <td><a href="activateUser/{{$user->id}}"> <img src="assets/dashboard/img/inactivo.png" style="width: 60px; height: 50px; margin-left: 10px;"></td>
+                                    <td><a href="activateUser/{{$user->id}}" data-turbolinks="false"> <img src="assets/dashboard/img/inactivo.png" style="width: 60px; height: 50px; margin-left: 10px;"></td>
                                             @endif
                                 </tr>
                                 @endforeach

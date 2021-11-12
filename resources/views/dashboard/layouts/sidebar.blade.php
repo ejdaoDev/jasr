@@ -1,3 +1,4 @@
+@include('dashboard.js.JSsidebar')
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="home" class="brand-link">
@@ -19,35 +20,29 @@
 
       <!-- Sidebar Menu -->
       <nav class="mt-2">
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-          <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
-          
-          <li class="nav-item">
-            <a href="#" class="nav-link">
+          <ul class="nav nav-sidebar flex-column nav-legacy" data-widget="treeview" role="menu" data-accordion="false">
+            <li id="security-accordion" class="nav-item">
+            <a id="security-link" href="#" class="nav-link">
                 <i class="fas fa-shield-alt nav-icon"></i>
               <p>Seguridad<i class="fas fa-angle-left right"></i>
               </p>
             </a>
-            <ul class="nav nav-treeview">
+            <ul class=" nav-treeview">
               <li class="nav-item">
-                <a href="create-user" class="nav-link">
+                <a id="create-user" onclick="sidebarOptionSelected('security','create-user');" href="create-user" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Crear Usuario</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="modify-user" class="nav-link">
+                  <a id="modify-user" onclick="sidebarOptionSelected('security','modify-user');" href="modify-user" class="nav-link" data-turbolinks="false">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Editar Usuario</p>
                 </a>
               </li>
             </ul>
           </li>
-        
         </ul>
       </nav>
-      <!-- /.sidebar-menu -->
     </div>
-    <!-- /.sidebar -->
   </aside>
