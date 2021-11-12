@@ -38,9 +38,9 @@ class UserController extends Controller {
         return redirect ("create-user");
     }
 
-    public function showFormModifyUser() {
+    public function showFormEditUser() {
         $users = User::all()->where("role_id", "!=", 1);
-        return view('dashboard.security.ModifyUser', compact("users"));
+        return view('dashboard.security.EditUser', compact("users"));
     }
 
     public function activateUser($id) {

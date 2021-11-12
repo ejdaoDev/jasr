@@ -35,7 +35,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                  <a id="modify-user" onclick="sidebarOptionSelected('security','modify-user');" href="modify-user" class="nav-link" data-turbolinks="false">
+                  <a id="edit-user" onclick="sidebarOptionSelected('security','edit-user');" href="edit-user" class="nav-link" data-turbolinks="false">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Editar Usuario</p>
                 </a>
