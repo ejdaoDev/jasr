@@ -50,6 +50,7 @@ class RouteServiceProvider extends ServiceProvider
                         
                         require base_path('routes/dashboard/auth.php');                  
                         require base_path('routes/dashboard/security.php');
+                        require base_path('routes/dashboard/blogs.php');
                         
                         require base_path('routes/webpage/pages.php');                  
                         require base_path('routes/webpage/blogs.php');                  

@@ -17,7 +17,7 @@ class UserController extends Controller {
 
     public function showFormCreateUser() {
         $roles = Role::all()->where("name", "!=", "OWNER");
-        return view('dashboard.security.CreateUser', compact("roles"));
+        return view('dashboard.modules.security.CreateUser', compact("roles"));
     }
 
     public function CreateUser(UserRequest $request) {
@@ -40,7 +40,7 @@ class UserController extends Controller {
 
     public function showFormEditUser() {
         $users = User::all()->where("role_id", "!=", 1);
-        return view('dashboard.security.EditUser', compact("users"));
+        return view('dashboard.modules.security.EditUser', compact("users"));
     }
 
     public function activateUser($id) {
