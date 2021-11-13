@@ -16,7 +16,7 @@
             </div>
         </div>
     </section>
-    <!-- Content -->
+    <!-- Content -->      
     <!-- End Content -->
 </div>
 @include('dashboard.layouts.footer')

@@ -1,5 +1,6 @@
 <?php $title = "Dashboard | Galería" ?>
 @include('dashboard.layouts.app')
+@include('dashboard.js.JSGallery')
 <div class="content-wrapper">
     <section class="content-header">
         <div class="container-fluid">
@@ -17,6 +18,57 @@
         </div>
     </section>
     <!-- Content -->
+
+    <section class="content">
+        <div class="container-fluid">
+
+            <div class="card card-default collapsed-card">
+                <div class="card-header">
+                    <h3 class="card-title">Subir Imagen(es)</h3>
+
+                    <div class="card-tools">
+                        <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                    <form  method="post" enctype="multipart/form-data" action="upload-images">{{ csrf_field() }}
+                        <input type="file" name="images[]" multiple>
+                        <button class="btn btn-success" type="submit">Subir</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="card card-default">
+                <div class="card-header">
+                    <h3 class="card-title">Imagenes</h3><br>
+                    {{$images->links()}}
+                    <div class="card-tools">
+                        <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                            <i class="fas fa-minus"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body" style="text-align: center;">
+                    <div class="container-fluid">
+                        <div class="form-group row">
+                            @foreach($images as $image)
+                            <div class="col-lg-6 col-md-6 col-mb-6 col-sm-12">
+                                <div>
+                                    <a href="assets/dashboard/img/blogs/{{$image->route}}" target="_blank"><img src="assets/dashboard/img/blogs/{{$image->route}}" style="padding: 5px; width: 300px; max-height: 200px;"></a>                    
+                                    <button class="btn btn-danger" onclick="deleteImage({{$image->id}},'{{$image->route}}')" style="margin-left: -50px; margin-top: 150px;"><i class="fas fa-trash-alt"></i></button>
+                                </div>
+                            </div>
+                            @endforeach
+                        </div>
+                    </div>
+                </div>
+            </div>         
+        </div>
+    </section><br>
     <!-- End Content -->
 </div>
 @include('dashboard.layouts.footer')
