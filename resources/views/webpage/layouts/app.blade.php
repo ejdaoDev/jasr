@@ -2,15 +2,14 @@
 <html class="no-js" lang="es">
 
     <head>    
-        <title>{{$title}}</title>
-        <meta name="description" content="" />
-
         <meta charset="utf-8" />
+        <title>{{$title}}</title>
+        <meta name="description" content="{{$description}}" />
         <meta http-equiv="x-ua-compatible" content="ie=edge" />    
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
-        <meta name="turbolinks-cache-control" content="no-cache">
+        <!--<meta name="turbolinks-cache-control" content="no-cache">-->
 
         <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
@@ -28,7 +27,6 @@
         <link rel="stylesheet" href="assets/webpage/css/reset.css" />
         <link rel="stylesheet" href="assets/webpage/css/responsive.css" />
 
-        <!--<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>-->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="assets/webpage/js/bootstrap.min.js"></script>
         <script src="assets/webpage/js/count-up.min.js"></script>
@@ -36,10 +34,8 @@
         <script src="assets/webpage/js/tiny-slider.js"></script>
         <script src="assets/webpage/js/glightbox.min.js"></script>
         <script src="assets/webpage/js/imagesloaded.min.js"></script>
-        <!--<script src="assets/webpage/js/isotope.min.js"></script>-->
+        <script src="assets/webpage/js/isotope.min.js"></script>
         <script src="assets/webpage/js/main.js"></script>
-        <!--<script src="{{ asset("js/app.js")}}"></script>
-        <script src="{{ asset("js/scrollTo.js")}}"></script>-->
     </head>    
     <body>
         @include('webpage.layouts.header')

@@ -1,4 +1,5 @@
-<?php $title = "JASR Desarrollo Web"; ?>
+<?php $title = "JASR Desarrollo Web | Desarrollo de software"; ?>
+<?php $description = "Desarrollamos tu proyecto según tus necesidades"; ?>
 @include('webpage.layouts.app')
 <script type="text/javascript">
     document.onload = window.scrollTo(0, 0);

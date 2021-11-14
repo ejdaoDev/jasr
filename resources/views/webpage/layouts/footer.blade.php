@@ -1,10 +1,8 @@
 <footer class="footer">
-
     <div class="footer-middle">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center col-md-12 col-12">
-
                     <div class="f-about single-footer">
                         <div class="logo">
                             <img src="assets/webpage/images/logosinletras2.png" alt="Logo">
@@ -14,14 +12,8 @@
                                 &copy; Copyright <strong>JASR Desarrollo Web</strong>. Todos los derechos reservados
                             </div>
                             <div class="credits">
-                                <!--
-                                  All the links in the footer should remain intact.
-                                  You can delete the links only if you purchased the pro version.
-                                  Licensing information: https://bootstrapmade.com/license/
-                                  Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=NewBiz
-                                -->
                                 Diseñada por <a href="#">JASR Desarrollo Web</a>
-                                <p><b>publicada por JASR: +57 3145092324<a href="3145092423"><i class="fa fa-whatsapp"></i></a></b></p>
+                                <p><b>publicada por JASR: +57 3227477211<a href="+573227477211"><i class="fa fa-whatsapp"></i></a></b></p>
                             </div>
                         </div>
                         <div class="footer-social">
@@ -31,16 +23,10 @@
                             </ul>
                         </div>
                     </div>
-
                 </div>
-
                 <div class="col-lg-4 col-md-6 col-12">
-
                     <div class="single-footer gallery">
-
-
                     </div>
-
                 </div>
             </div>
         </div>
@@ -56,6 +42,5 @@
 <a href="#" class="scroll-top btn-hover">
     <i class="lni lni-chevron-up"></i>
 </a>
-
 </body>
 </html>

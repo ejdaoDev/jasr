@@ -72,4 +72,3 @@
             </div>
         </div>
     </header>
-    @include('webpage.js.JSheader')
