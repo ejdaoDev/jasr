@@ -21,6 +21,7 @@
         <!-- Sidebar Menu -->
         <nav class="mt-2">
             <ul class="nav nav-sidebar flex-column nav-legacy" data-widget="treeview" role="menu" data-accordion="false">
+                @if(auth()->user()->role->name == 'ADMIN')
                 <li id="security-accordion" class="nav-item">
                     <a id="security-link" href="#" class="nav-link">
                         <i class="fas fa-shield-alt nav-icon"></i>
@@ -35,13 +36,14 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a id="edit-user" onclick="sidebarOptionSelected('security', 'edit-user');" href="edit-user" class="nav-link" data-turbolinks="false">
+                            <a id="edit-user" onclick="sidebarOptionSelected('security', 'edit-user');" href="edit-user" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Editar Usuario</p>
                             </a>
                         </li>
                     </ul>
                 </li>
+                @endif
             
                 <li id="blogs-accordion" class="nav-item">
                     <a id="blogs-link" href="#" class="nav-link">
@@ -51,7 +53,7 @@
                     </a>
                     <ul class=" nav-treeview">
                         <li class="nav-item">
-                            <a id="create-blog" onclick="sidebarOptionSelected('blogs', 'create-blog');" href="create-blog" class="nav-link" data-turbolinks="false">
+                            <a id="create-blog" onclick="sidebarOptionSelected('blogs', 'create-blog');" href="create-blog" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Crear Blog</p>
                             </a>

@@ -4,7 +4,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 
-class AdminMiddleware {
+class UserMiddleware {
 
     /**
      * Run the request filter.
@@ -14,7 +14,7 @@ class AdminMiddleware {
      * @return mixed
      */
     public function handle($request, Closure $next) {
-        if (auth()->user()->role->name == 'ADMIN') {
+        if (auth()->user()->role->name == 'USER' || auth()->user()->role->name == 'ADMIN') {
             return $next($request);
         }
         return back();

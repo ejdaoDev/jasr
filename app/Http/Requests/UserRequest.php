@@ -23,23 +23,20 @@ class UserRequest extends FormRequest {
     public function rules() {
         return [
             'email' => 'required|email|string|max:70|unique:users',
-            'idnumber' => 'unique:users',
-            'password' => 'required|string|min:6|max:20|confirmed',
+            'idnumber' => 'unique:users'
         ];
     }
 
     public function attributes() {
         return [
-            'password' => 'contraseñas',
             'phonenumber' => 'numero de telefono',
         ];
     }
 
     public function messages() {
         return [
-            'password.confirmed' => 'Las :attribute no coinciden',
-            'password.min' => 'Las :attribute deben contener al menos 6 caracteres',
             'email.unique' => 'Existe una cuenta con este :attribute',
+            'idnumber.unique' => 'Existe una cuenta con esta identificacion',
         ];
     }
 

@@ -7,7 +7,7 @@
 
                     <div class="f-about single-footer">
                         <div class="logo">
-                            <img src="assets/logosinletras2.png" alt="Logo">
+                            <img src="assets/webpage/images/logosinletras2.png" alt="Logo">
                         </div>
                         <div class="container">
                             <div class="copyright">

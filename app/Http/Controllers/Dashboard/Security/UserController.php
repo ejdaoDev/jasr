@@ -29,13 +29,13 @@ class UserController extends Controller {
         $user['phonenumber'] = $request->phonenumber;
         $user['role_id'] = $request->role;
         $user['email'] = $request->email;
-        $user['password'] = bcrypt($request->password);
+        $user['password'] = bcrypt('123');
         $user['created_by'] = auth()->id();
         $user['updated_by'] = auth()->id();
         User::create($user);
 
         Session::flash('usuariocreado', 'El usuario fue registrado correctamente');
-        return redirect ("create-user");
+        return redirect("create-user");
     }
 
     public function showFormEditUser() {
@@ -47,16 +47,14 @@ class UserController extends Controller {
         $user = User::findOrFail($id);
         $upd["active"] = 1; //true
         $user->update($upd);
-        Session::flash('usuarioactivado', 'El usuario ' . ' ' . $user->names . ' ' . $user->lastnames . ' fue activado correctamente');
-        return redirect("modify-user");
+        return back();
     }
 
     public function inactivateUser($id) {
         $user = User::findOrFail($id);
         $upd["active"] = 0; //false
         $user->update($upd);
-        Session::flash('usuarioinactivado', 'El usuario ' . ' ' . $user->names . ' ' . $user->lastnames . ' fue inactivado correctamente');
-        return redirect("modify-user");
+        return back();
     }
 
 }

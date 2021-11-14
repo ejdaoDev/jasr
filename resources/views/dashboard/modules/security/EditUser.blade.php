@@ -1,6 +1,10 @@
 <?php $title = "Dashboard | Editar Usuario" ?>
 @include('dashboard.layouts.app')
 @include('dashboard.js.JSuser')
+<script>$(function () {$("#datatable").DataTable({
+    "responsive": true, "lengthChange": false, "autoWidth": false, "buttons":
+    ["copy", "csv", "excel", "pdf", "print", "colvis"]}).buttons().container()
+            .appendTo('#datatable_wrapper .col-md-6:eq(0)'); });</script>
 <div class="content-wrapper">
     <section class="content-header">
         <div class="container-fluid">
@@ -17,7 +21,6 @@
             </div>
         </div>
     </section>
-
     <!-- Main content -->
     <section class="content">
         <div class="container-fluid">
@@ -48,9 +51,9 @@
                                         <td>{{$user->email}}</td>
                                         <td>{{$user->role->name}}</td>
                                         @if($user->active == false)      
-                                        <td><a href="#" onclick="unlock({{$user}})" data-turbolinks="false" type="button" class="btn btn-outline-danger"><i class="fas fa-lock"></i></a></td>
+                                        <td><a onclick="unlock({{$user}})" type="button" class="btn btn-outline-danger"><i class="fas fa-lock"></i></a></td>
                                         @else  
-                                        <td><a href="#" onclick="lock({{$user}})" data-turbolinks="false" type="button" class="btn btn-outline-success"><i class="fas fa-lock-open"></i></a></td>
+                                        <td><a onclick="lock({{$user}})" type="button" class="btn btn-outline-success"><i class="fas fa-lock-open"></i></a></td>
                                         @endif
                                     </tr>
                                     @endforeach

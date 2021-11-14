@@ -35,17 +35,8 @@
                 <!-- /.card-header -->
                 <div class="card-body">
                     <form class="form-horizontal" method="POST" action="create-user">{{csrf_field()}}
-                        @if(count($errors)>0)
-                        <div class="alert alert-danger alert-dismissible" role="success">
-                            <ul>
-                                @foreach($errors->all() as $error)
-                                <li> {{$error}}</li>
-                                @endforeach
-                            </ul>
-                        </div>
-                        @endif
-                        @include('dashboard.exits.seguridadExits')
-                        @include('dashboard.errors.seguridadErrors')
+                        @include('dashboard.alerts.exits')
+                        @include('dashboard.alerts.errors')
                         <div class="form-group row">
                             <div class="col-sm-6 mb-3 mb-sm-0">
                                 Identificación*
@@ -76,33 +67,30 @@
                                 Segundo apellido
                                 <input type="text" class="form-control" name="secondlastname" maxlength="50" value="{{ old('secondlastname') }}">
                             </div>
-                        </div>                               
-                        <div class="form-group">
-                            Rol*
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-6 mb-3 mb-sm-0">
+                                Rol*
                             <select name="role" class="form-control" required>
                                 <option selected disabled hidden style='display: none' value=''></option> 
                                 @foreach($roles as $rol)
                                 <option value ="{{$rol->id}}">{{$rol->name}}</option>    
                                 @endforeach
                             </select>
-                        </div>
-
-                        <div class="form-group">
-                            Email*
-                            <input type="email" class="form-control" name="email" value="{{ old('email') }}" maxlength="70" required>
-                        </div>
-
-                        <div class="form-group row">
-                            <div class="col-sm-6 mb-3 mb-sm-0">
-                                password*
-                                <input type="password" class="form-control" name="password" maxlength="20">
                             </div>
                             <div class="col-sm-6 mb-3 mb-sm-0">
-                                Confirmar password*
-                                <input type="password" class="form-control" name="password_confirmation" maxlength="20"></div>
+                                Email*
+                            <input type="email" class="form-control" name="email" value="{{ old('email') }}" maxlength="70" required>
                         </div>
-                        <button class="btn btn-user btn-primary btn-block" type="submit" data-turbolinks="false">Registrar</button>
-                        <button class="btn btn-user btn-secondary btn-block" type="reset">Limpiar</button>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-6 mb-3 mb-sm-0">
+                             <button class="btn btn-user btn-primary btn-block" type="submit" data-turbolinks="false">Registrar</button>
+                            </div>
+                            <div class="col-sm-6 mb-3 mb-sm-0">
+                            <button class="btn btn-user btn-secondary btn-block" type="reset">Limpiar</button>
+                        </div>
+                        </div>
                         <hr>
                     </form>
                 </div>

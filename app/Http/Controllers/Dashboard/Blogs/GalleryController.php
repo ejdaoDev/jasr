@@ -11,7 +11,7 @@ class GalleryController extends Controller {
 
     public function __construct() {
         $this->middleware('auth');
-        $this->middleware('admin');
+        $this->middleware('user');
     }
 
     public function showGallery() {
@@ -19,13 +19,14 @@ class GalleryController extends Controller {
         return view('dashboard.modules.blogs.Gallery', compact('images'));
     }
 
-    public function deleteImages($id,$route) {
+    public function deleteImages($id, $route) {
         $image = BlogsImage::find($id);
         $image->delete();
         //$OldImage = '/home/jasrdesa/public_html/assets/dashboard/img/blogs/'.$route; //en produccion
-        //unlink($OldImage);
+        $OldImage = public_path() . '/assets/dashboard/img/blogs/' . $route;
+        unlink($OldImage);
     }
-    
+
     public function uploadImages(Request $request) {
         $files = $request->file('images');
         $now = Carbon::now()->format('dmYhis');
@@ -45,4 +46,5 @@ class GalleryController extends Controller {
         }
         return back();
     }
+
 }

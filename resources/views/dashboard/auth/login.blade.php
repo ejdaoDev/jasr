@@ -18,7 +18,7 @@
     <body class="hold-transition login-page">
         <div class="login-box">
             <div class="login-logo">
-                <a href="../../index2.html"><b>JASR</b> Desarrollo Web</a>
+                <a href="./"><b>JASR</b> Desarrollo Web</a>
             </div>
             <!-- /.login-logo -->
             <div class="card">
@@ -58,18 +58,16 @@
                                     </label>
                                 </div>
                             </div>
-                            <!-- /.col -->
                             <div class="col-4">
                                 <button type="submit" class="btn btn-primary btn-block">Ingresar</button>
                             </div>
-                            <!-- /.col -->
                         </div>
                     </form>
                     <p class="mb-1">
                         <a href="forgot-password.html">Olvidé mi contraseña</a>
                     </p>
                     <!--<p class="mb-0">
-                        <a href="register.html" class="text-center">Register a new membership</a>
+                        <a href="register.html" class="text-center">Registrarme</a>
                     </p>-->
                 </div>
             </div>
