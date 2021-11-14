@@ -24,7 +24,11 @@
         <link rel="stylesheet" href="assets/dashboard/dist/css/adminlte.min.css">
         <link rel="stylesheet" href="assets/dashboard/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
         <link rel="stylesheet" href="assets/dashboard/plugins/daterangepicker/daterangepicker.css">
+        <!-- Summernote & CodeMirror -->
         <link rel="stylesheet" href="assets/dashboard/plugins/summernote/summernote-bs4.min.css">
+        <link rel="stylesheet" href="assets/dashboard/plugins/codemirror/codemirror.css">
+        <link rel="stylesheet" href="assets/dashboard/plugins/codemirror/theme/monokai.css">
+        <!-- End Summernote & CodeMirror -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="assets/dashboard/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="assets/dashboard/plugins/chart.js/Chart.min.js"></script>
@@ -35,7 +39,6 @@
         <script src="assets/dashboard/plugins/moment/moment.min.js"></script>
         <script src="assets/dashboard/plugins/daterangepicker/daterangepicker.js"></script>
         <script src="assets/dashboard/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
-        <script src="assets/dashboard/plugins/summernote/summernote-bs4.min.js"></script>
         <script src="assets/dashboard/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
         <script src="assets/dashboard/dist/js/adminlte.js"></script>
         <script src="assets/dashboard/dist/js/pages/dashboard.js"></script>
@@ -48,7 +51,6 @@
         <script src="assets/dashboard/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="js/app.js"></script>
         <!-- Datatables -->
-       
         <link rel="stylesheet" href="assets/dashboard/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
         <link rel="stylesheet" href="assets/dashboard/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
         <link rel="stylesheet" href="assets/dashboard/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
@@ -65,14 +67,27 @@
         <script src="assets/dashboard/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
         <script src="assets/dashboard/plugins/datatables-buttons/js/buttons.print.min.js"></script>
         <script src="assets/dashboard/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+        <!-- Summernote & CodeMirror -->
+        <script src="assets/dashboard/plugins/summernote/summernote-bs4.min.js"></script>
+        <script src="assets/dashboard/plugins/codemirror/codemirror.js"></script>
+        <script src="assets/dashboard/plugins/codemirror/mode/css/css.js"></script>
+        <script src="assets/dashboard/plugins/codemirror/mode/xml/xml.js"></script>
+        <script src="assets/dashboard/plugins/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+        <!-- End Summernote & CodeMirror -->
         <script>
-  $(function () {
+$(function () {
     $("#datatable").DataTable({
-      "responsive": true, "lengthChange": false, "autoWidth": false,
-      "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+        "responsive": true, "lengthChange": false, "autoWidth": false,
+        "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
     }).buttons().container().appendTo('#datatable_wrapper .col-md-6:eq(0)');
-  });
-</script>
+});
+        </script>
+        <script>
+            $(function () {
+                // Summernote
+                $('#summernote').summernote();
+            });
+        </script>
     </head>
     <body class="hold-transition layout-fixed">
         <div class="wrapper">

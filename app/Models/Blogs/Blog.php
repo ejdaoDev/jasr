@@ -20,7 +20,9 @@ class Blog extends Model{
         "tag3",
         "tag4",
         "created_at",
-        "updated_at"
+        "updated_at",
+        "visits",
+        "published"
     ];
     
     public function blogscategory()

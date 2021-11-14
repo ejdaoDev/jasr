@@ -16,7 +16,19 @@
             </div>
         </div>
     </section>
-    <!-- Content -->      
+    <!-- Content -->
+    <section class="content">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <!-- /.card-header -->
+              <div class="card-body">
+                  <textarea id="summernote">Escribe tu blog aquí...</textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     <!-- End Content -->
 </div>
 @include('dashboard.layouts.footer')

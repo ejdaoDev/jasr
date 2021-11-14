@@ -51,7 +51,7 @@
                     </a>
                     <ul class=" nav-treeview">
                         <li class="nav-item">
-                            <a id="create-blog" onclick="sidebarOptionSelected('blogs', 'create-blog');" href="create-blog" class="nav-link">
+                            <a id="create-blog" onclick="sidebarOptionSelected('blogs', 'create-blog');" href="create-blog" class="nav-link" data-turbolinks="false">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Crear Blog</p>
                             </a>
