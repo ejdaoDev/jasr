@@ -35,7 +35,7 @@
                 <!-- /.card-header -->
                 <div class="card-body">
                     <form  method="post" enctype="multipart/form-data" action="upload-images">{{ csrf_field() }}
-                        <input type="file" name="images[]" multiple>
+                        <input type="file" name="images[]" required multiple>
                         <button class="btn btn-success" type="submit">Subir</button>
                     </form>
                 </div>

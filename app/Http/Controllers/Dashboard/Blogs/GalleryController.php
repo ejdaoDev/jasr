@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Dashboard\Blogs;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\Blogs\BlogsImages;
+use App\Models\Blogs\BlogsImage;
 use Carbon\Carbon;
 
 class GalleryController extends Controller {
@@ -15,12 +15,12 @@ class GalleryController extends Controller {
     }
 
     public function showGallery() {
-        $images = BlogsImages::where('created_by', auth()->id())->orderBy("id", "DESC")->paginate(6);
+        $images = BlogsImage::where('created_by', auth()->id())->orderBy("id", "DESC")->paginate(6);
         return view('dashboard.modules.blogs.Gallery', compact('images'));
     }
 
     public function deleteImages($id,$route) {
-        $image = BlogsImages::find($id);
+        $image = BlogsImage::find($id);
         $image->delete();
         //$OldImage = '/home/jasrdesa/public_html/assets/dashboard/img/blogs/'.$route; //en produccion
         //unlink($OldImage);
@@ -39,7 +39,7 @@ class GalleryController extends Controller {
                 rename("assets/dashboard/img/blogs/" . $name, "assets/dashboard/img/blogs/" . $now . $counter . "." . $ext);
                 $NewImage["route"] = $now . $counter . "." . $ext;
                 $NewImage["created_by"] = auth()->id();
-                BlogsImages::create($NewImage);
+                BlogsImage::create($NewImage);
                 $counter++;
             }
         }
