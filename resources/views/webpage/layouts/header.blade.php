@@ -30,7 +30,7 @@
                                     <li class="nav-item">
                                         <a class="page-scroll" href="./#precios">Precios</a>
                                     </li>                                    
-                                    <!--<li class="nav-item">
+                                    <li class="nav-item">
                                         <a class="page-scroll dd-menu collapsed" href="#servicios"
                                             data-bs-toggle="collapse" data-bs-target="#submenu-1-2"
                                             aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -39,14 +39,14 @@
                                             <li class="nav-item" id="diseno_web"><a onclick="selected('servicios'), subselected('diseno_web')" href="servicios!=diseno_web">Diseño Web</a></li>
                                             <li class="nav-item" id="tu_propio_software"><a onclick="selected('servicios'), subselected('tu_propio_software')" href="servicios!=tu_propio_software">Tu Propio Software</a></li>
                                             <!--<li class="nav-item" id="marketing_digital"><a onclick="selected('servicios'), subselected('marketing_digital')" href="servicios!=marketing_digital">Marketing Digital</a></li>
-                                            <li class="nav-item" id="consultoria"><a onclick="selected('servicios'), subselected('consultoria')" href="servicios!=consultorias">Consultorías</a></li>
+                                            <li class="nav-item" id="consultoria"><a onclick="selected('servicios'), subselected('consultoria')" href="servicios!=consultorias">Consultorías</a></li>-->
                                             
                                         </ul>
-                                    </li>-->
+                                    </li>
                                     
-                                    <!--<li class="nav-item">
+                                    <li class="nav-item">
                                         <a class="page-scroll" onclick="selected('galeria')" href="galeria" id="galeria">Galería</a>
-                                    </li>-->
+                                    </li>
                                     <!--<li class="nav-item">
                                         <a class="page-scroll dd-menu collapsed" href="javascript:void(0)"
                                             data-bs-toggle="collapse" data-bs-target="#submenu-1-4"

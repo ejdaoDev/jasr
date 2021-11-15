@@ -5,6 +5,7 @@
         <meta charset="utf-8" />
         <title>{{$title}}</title>
         <meta name="description" content="{{$description}}" />
+        <link rel="canonical" href="https://jasrdesarrolloweb.com/" />
         <meta http-equiv="x-ua-compatible" content="ie=edge" />    
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="msapplication-TileColor" content="#da532c">
@@ -36,7 +37,7 @@
         <script src="assets/webpage/js/imagesloaded.min.js"></script>
         <script src="assets/webpage/js/isotope.min.js"></script>
         <script src="assets/webpage/js/main.js"></script>
+        <!--<script src="js/app.js"></script>-->
     </head>    
     <body>
         @include('webpage.layouts.header')
-

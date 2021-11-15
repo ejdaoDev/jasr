@@ -1,4 +1,4 @@
-<?php $title = "JASR Desarrollo Web | Desarrollo de software"; ?>
+<?php $title = "JASR Desarrollo Web"; ?>
 <?php $description = "Desarrollamos tu proyecto según tus necesidades"; ?>
 @include('webpage.layouts.app')
 <script type="text/javascript">
@@ -17,21 +17,23 @@
                     <div class="home-slider">
                         <div class="hero-text">
                             <h1>Paginas web personalizadas<br></h1>
-                            <p>En JASR DESARROLLO WEB, contamos con un equipo de profesionales en diferentes campos de la programación lo con nos permite ofrecerles un servicio de muy alta calidad. Nos especializamos en la creación de sitios web, aplicaciones móviles, software de gestión y entre muchas otras cosas; Por ende, esto nos hace tu prefecto aliado, para la creación de tu sitio web de todo tipo empresa o negoció
-                                Puedes tener una PÁGINA WEB para tu negocio con todas las de la ley cómo decimos acá. 
-                                ¡vamos contáctanos!
+                            <p>En JASR DESARROLLO WEB, contamos con un equipo de profesionales en diferentes áreas
+                                lo cual nos permite ofrecer un servicio de muy alta calidad.
+                                Nos especializamos en la creación de sitios web, aplicaciones móviles y software 
+                                de gestión de datos. Somos los indicados para la creación 
+                                de tu sitio web de todo tipo empresa o negocio. 
                             </p>
                             <div class="button wow fadeInUp" data-wow-delay=".9s">
                                 <a href="servicios!=diseno_web" onclick="selected('servicios'), subselected('diseno_web')" class="btn mouse-dir">Descubrir más <span
                                         class="dir-part"></span></a>
                             </div>
                         </div>
-                        <div class="hero-text">                                
-                            <h1 class="wow fadeInUp" data-wow-delay=".5s">Desarrollamos software a tu medida<br></h1>
+                        <div class="hero-text"><br>                       
+                            <h2 class="wow fadeInUp" data-wow-delay=".5s">Desarrollamos software a tu medida<br></h2><br>
                             <p class="wow fadeInUp" data-wow-delay=".7s"> Integre todas las áreas de su empresa 
-                                mediante un Sistema ERP a medida. Administre de forma segura y eficiente todos los aspectos de su empresa.
-                                Obtener en tiempo real los ingresos y egresos de su empresa.<br>  
-                                <br>.
+                                mediante un sistema desarrollado a medida para cubrir las necesidades generales de su compañía
+                                y cualquier otra necesidad específica de su negocio. contabilidad? gestión de nómina? gestión 
+                                de inventarios o stock?, solo debe comentarnos sus requerimientos y nosotros haremos el resto.<br>
                             <div class="button">
                                 <a href="servicios!=tu_propio_software" onclick="selected('servicios'), subselected('tu_propio_software')" class="btn mouse-dir">Descubrir más <span
                                         class="dir-part"></span></a>
@@ -67,10 +69,9 @@
             </div>
         </div>
     </div>
-
 </section>
 
-<section id="nosotros" class="Features section">
+<section id="nosotros" class="Features section"><br>
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-12">
@@ -84,30 +85,33 @@
             <div class="col-lg-6 col-md-6 col-12">
                 <div class="feature-content">
                     <div class="title">
-                        <h3 class="wow fadeInRight" data-wow-delay=".5s">Sobre Nosotros</h3>
+                        <h2 class="wow fadeInRight" data-wow-delay=".5s">Sobre Nosotros</h2>
                     </div>
                     <div data-wow-delay=".5s">
 
                         <div class="banner-content">
-                            <p><b>JASR Desarrollo Web</b> nació un 8 de Julio de 2021 con la intención
+                            <p><b>Jasr Desarrollo Web</b> nació un 7 de Abril de 2021 con la intención
                                 de abrirse paso en la industria del desarrollo de software, tomando su primer
-                                sede en Valledupar, Cesar.</p>
+                                sede en Valledupar, Cesar (Colombia). Fundada por <b>Enrique de Armas</b>, <b>Jair Eustate</b> y 
+                                <b>Esteven Rada</b>, egresados del Servicio Nacional de Aprendizaje (Sena)
+                                con el titulo de Técnologos en Análisis y desarrollo de sistemas de la información.</p>
                         </div>
                     </div>
                     <div data-wow-delay=".6s">
                         <div class="banner-content"><br>
                             <h3 class="title">MISION</h3>
                             <p>Desarrollar software con altos estandares de calidad, escalable y facíl de mantener, garantizar 
-                                el exito de las campañas publicitarias de nuestros clientes y ser una marca que genere confíanza 
+                                el contacto cercano con nuestros clientes, comprender y atender al maximo sus necesidades relacionadas
+                                con el proyecto planteado y en consecuencia ganarnos su confianza y recomendación. 
                                 entre ellos.</p>
                         </div>
                     </div>
                     <div data-wow-delay=".7s">
                         <div class="banner-content"><br>
                             <h3 class="title">VISION</h3>
-                            <p>Para el 2026 nos vemos como un referente del desarrollo de software y el marketing digital en
-                                latinoamerica, empeñados en trabajar con los metodos de desarrollo mas novedosos y generar empleo a 
-                                nuevos desarrolladores.</p>
+                            <p>Para el 2026 nos vemos como un referente del desarrollo de software en latinoamerica, empeñados en trabajar con los metodos 
+                                de desarrollo mas novedosos y poder generar empleo a desarrolladores que estén buscando su primera oportunidad
+                                en el mundo laboral.</p>
                         </div>
                     </div>
                 </div>
@@ -116,20 +120,11 @@
     </div>
 </section>
 
+<div class="video-head wow zoomIn"><a href="#" class="glightbox video"></a></div>
+<div class="testimonial-slider"></div>
+<div class="client-logo-carousel d-flex align-items-center justify-content-between"></div>
 
-
-<div class="video-head wow zoomIn">
-    <a href="#" class="glightbox video"></a>
-</div>
-
-<div class="testimonial-slider">
-</div>
-
-<div class="client-logo-carousel d-flex align-items-center justify-content-between">
-</div>
-
-
-<section id="servicios" class="services section" style="margin-top: -25px;">
+<section id="servicios" class="services section"><br>
     <div class="container">
         <div class="row">
             <div class="col-lg-8 offset-lg-2 col-12">
@@ -140,13 +135,14 @@
         </div>
         <div class="row">
             <div class="col-lg-4 col-md-6 col-12">
-                <div class="single-service wow fadeInUp" data-wow-delay=".2s">
+                <div class="single-service wow fadeInUp" data-wow-delay=".2s" style="height: 350px;">
                     <div class="serial">
                         <span><i class="lni lni-code"></i></span>
                     </div>
-                    <h3><a href="service-diseño-web.html">Desarrollo web</a></h3>
-                    <p><justify>Páginas web responsiva, actualizadas con lo último en tendencia en diseño
-                        y programación siempre llevando una estructura que permita desarrollar . . .
+                    <h3><a href="service-diseño-web.html">Páginas Web</a></h3>
+                    <p><justify>Te asistimos en el diseño y desarrollo de la página web de tu
+                        negocio, generamos diseños responsivos y adaptables al tipo de negocio
+                        que debe representar.
                     </justify></p>
                     <div class="circles-wrap">
                         <div class="circles">
@@ -159,30 +155,13 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-12">
-                <div class="single-service wow fadeInUp" data-wow-delay=".3s">
-                    <div class="serial">
-                        <span><i class="lni lni-camera"></i></span>
-                    </div>
-                    <h3><a href="service-Contenido audiovisual.html">Contenido audiovisual Marketing y redes sociales</a></h3>
-                    <p><justify>Promocionales con gran impacto para . .</justify></p>
-                    <div class="circles-wrap">
-                        <div class="circles">
-                            <span class="circle circle-1"></span>
-                            <span class="circle circle-2"></span>
-                            <span class="circle circle-3"></span>
-                            <span class="circle circle-4"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="single-service wow fadeInUp" data-wow-delay=".4s">
+                <div class="single-service wow fadeInUp" data-wow-delay=".4s" style="height: 350px;">
                     <div class="serial">
                         <span><i class="lni lni-code-alt"></i></span>
                     </div>
-                    <h3><a href="service-Software empresarial.html">Software empresarial</a></h3>
-                    <p><justify>Acceda a la información estratégica de su
-                        negocio atravez de Sistema de Gestión Empresarial, cumplimiento y Tranquilidad . . .
+                    <h3><a href="service-Software empresarial.html">Software Empresarial</a></h3>
+                    <p><justify>Somos profesionales en sistemas de gestión de la información, desde servicios
+                        generales y típicos hasta necesidades muy específicas.
                     </justify></p>
                     <div class="circles-wrap">
                         <div class="circles">
@@ -194,50 +173,16 @@
                     </div>
                 </div>
             </div>
+            
+            
             <div class="col-lg-4 col-md-6 col-12">
-                <div class="single-service wow fadeInUp" data-wow-delay=".5s">
-                    <div class="serial">
-                        <span><i class="lni lni-keyword-research"></i></span>
-                    </div>
-                    <h3><a href="service-Estrategia e investigación.html">Estrategia e investigación de su competencia</a></h3>
-                    <p><justify>Nosotros le ofrecemos un plan, unas rutas que les permitirá colocar sus productos . . .
-                    </justify></p>
-                    <div class="circles-wrap">
-                        <div class="circles">
-                            <span class="circle circle-1"></span>
-                            <span class="circle circle-2"></span>
-                            <span class="circle circle-3"></span>
-                            <span class="circle circle-4"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="single-service wow fadeInUp" data-wow-delay=".6s">
-                    <div class="serial">
-                        <span><i class="lni lni-seo"></i></span>
-                    </div>
-                    <h3><a href="service-Optimizacion para los diferentes motores.html">Optimizacion para los diferentes motores de busqueta (SEO) </a></h3>
-                    <p><justify>Para salir de primero en motores de búsqueda como Google y cumplir
-                        los objetivos de su negocio o empresa . . 
-                    </justify></p>
-                    <div class="circles-wrap">
-                        <div class="circles">
-                            <span class="circle circle-1"></span>
-                            <span class="circle circle-2"></span>
-                            <span class="circle circle-3"></span>
-                            <span class="circle circle-4"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="single-service wow fadeInUp" data-wow-delay=".7s">
+                <div class="single-service wow fadeInUp" data-wow-delay=".7s" style="height: 350px;">
                     <div class="serial">
                         <span><i class="lni lni-laptop"></i></span>
                     </div>
-                    <h3><a href="service-single.html">Tiendas en línea</a></h3>
-                    <p>Si sus productos o servicios son adecuados para comercializar por Internet, una tienda Online es su mejor opción, reciba pagos en línea y realice envíos automáticamente</p>
+                    <h3><a href="service-single.html">Tiendas Online</a></h3>
+                    <p>Si desea comercializar sus productos por Internet sin intermediarios o quiere reconocimiento de su marca, 
+                        una tienda Online es su mejor opción, contacte con nosotros</p>
                     <div class="circles-wrap">
                         <div class="circles">
                             <span class="circle circle-1"></span>
@@ -252,7 +197,7 @@
     </div>
 </section>
 
-<section id="precios" class="pricing-table section">
+<section id="precios" class="pricing-table section"><br>
     <div class="container">
         <div class="row">
             <div class="col-lg-8 offset-lg-2 col-12">
@@ -264,10 +209,10 @@
         </div>
 
         <div class="row">
-            <div class="col-lg-3 col-md-0 col-0"></div>
+            <div class="col-lg-1 col-md-0 col-0"></div>
             <div class="col-lg-3 col-md-6 col-12">
 
-                <div class="single-table wow fadeInUp" data-wow-delay=".7s">
+                <div class="single-table wow fadeInUp" data-wow-delay=".7s" style="height: 760px;">
                     <p class="popular">Popular</p>
 
                     <div class="table-head">
@@ -329,7 +274,32 @@
                 </div>
 
             </div>
-            <div class="col-lg-3 col-md-0 col-0"></div>
+            <div class="col-lg-3 col-md-6 col-12">
+
+                <div class="single-table wow fadeInUp" data-wow-delay=".7s" style="height: 760px;">
+                    
+
+                    <div class="table-head">
+                        <h4 class="title">Ecommerce<span></span></h4>
+                        <div class="price">
+                            <p class="amount"><span class="curency">$</span>650<span class="duration"><b>/usd</b></span></p>
+                        </div>
+                    </div>
+
+                    <ul class="table-list">
+                        <li>✔Dashboard</li>
+                        <li>✔Diseño responsivo</li>
+                        <li>✔Metodo de pagos por defecto incluido (negociación por whatsapp)</li>
+                        <li>✔Puede agregar pasarela de pago</li>
+                        <li>✔Front con Angular y back con Nest.js o Node.js </li>
+                        <li>✔Puede agregar app para moviles (precio por separado)</li>
+                    </ul>                    
+                    <div class="button">
+                        <a class="btn white-bg mouse-dir" href="#">Empezar <span class="dir-part"></span></a>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 </section>
@@ -429,23 +399,14 @@
                 class="dir-part"></span></a>
     </div>
 </div>-->
-<section id="contactanos" class="call-action section overlay">
+<section id="contactanos" class="call-action section overlay"><br>
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 col-md-6 col-12 wow fadeInLeft" data-wow-delay=".3s">
-                <div class="section-title">
-                    <span>Conozcanos</span>
-                    <h2>Nosotros somos muy <br>Buenos<br> Impulsando su <br>negocio</h2>
-                    <p>Descubrir más</p>
-                </div>
-                <div class="button section-button">
-                    <a href="about-us.html" class="btn mouse-dir">Descubrir más<span class="dir-part"></span></a>
-                </div>
-            </div>
+            <div class="col-lg-3 col-md-3 col-12 wow fadeInLeft" data-wow-delay=".3s"></div>
             <div class="col-lg-6 col-md-6 col-12 wow fadeInRight" data-wow-delay=".4s">
                 <div class="right-form">
-                    <div class="section-heading">
-                        <h4><span>Contacta con nosotros</span></h4>
+                    <div class="section-heading" style="text-align: center;">
+                        <h2>Contactanos</h2>
                     </div>
                     <div class="contact-form-box ">
                         <form method="post" action="send-mail" class="mailform"> @csrf
@@ -471,11 +432,9 @@
                     </div>
                 </div>
             </div>
+            <div class="col-lg-3 col-md-3 col-12 wow fadeInLeft" data-wow-delay=".3s"></div>
         </div>
     </div>
 </section>
 @include('webpage.layouts.footer')
-
 @include('webpage.js.JSindex')
-
-

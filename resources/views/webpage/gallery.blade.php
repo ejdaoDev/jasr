@@ -32,7 +32,7 @@
 
     <body>
         @include('webpage.layouts.header')
-        <section class="portfolio-section section">
+        <section class="portfolio-section section"><br>
             <div id="container" class="container">
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2 col-12">
@@ -61,10 +61,8 @@
                             </div>
                             <div class="portfolio-overlay">
                                 <div class="overlay-content">
-                                    <h4>Nombre proyecto</h4>
-                                    <p>Creamos una biblioteca de diseño impresionante que es robusta e intuitiva para los
-                                        negocios
-                                        presentación.</p>
+                                    <h4>lorem ipsum</h4>
+                                    <p>Neque porro quisquam est qui dolorem eque porro quisquam est qui dolorem</p>
                                     <a href="portfolio-single.html" class="theme-btn border-btn">Vista completa</a>
                                 </div>
                             </div>
@@ -77,10 +75,8 @@
                             </div>
                             <div class="portfolio-overlay">
                                 <div class="overlay-content">
-                                    <h4>Nombre proyecto</h4>
-                                    <p>Creamos una biblioteca de diseño impresionante que es robusta e intuitiva para los
-                                        negocios
-                                        presentación.</p>
+                                    <h4>lorem ipsum</h4>
+                                    <p>Neque porro quisquam est qui dolorem eque porro quisquam est qui dolorem</p>
                                     <a href="portfolio-single.html" class="theme-btn border-btn">Vista completa</a>
                                 </div>
                             </div>
@@ -93,10 +89,8 @@
                             </div>
                             <div class="portfolio-overlay">
                                 <div class="overlay-content">
-                                    <h4>Nombre proyecto</h4>
-                                    <p>Creamos una biblioteca de diseño impresionante que es robusta e intuitiva para los
-                                        negocios
-                                        presentación.</p>
+                                    <h4>lorem ipsum</h4>
+                                    <p>Neque porro quisquam est qui dolorem eque porro quisquam est qui dolorem</p>
                                     <a href="portfolio-single.html" class="theme-btn border-btn">Vista completa</a>
                                 </div>
                             </div>
@@ -109,10 +103,8 @@
                             </div>
                             <div class="portfolio-overlay">
                                 <div class="overlay-content">
-                                    <h4>Nombre proyecto</h4>
-                                    <p>Creamos una biblioteca de diseño impresionante que es robusta e intuitiva para los
-                                        negocios
-                                        presentación.</p>
+                                    <h4>lorem ipsum</h4>
+                                    <p>Neque porro quisquam est qui dolorem eque porro quisquam est qui dolorem</p>
                                     <a href="portfolio-single.html" class="theme-btn border-btn">Vista completa</a>
                                 </div>
                             </div>
@@ -125,10 +117,8 @@
                             </div>
                             <div class="portfolio-overlay">
                                 <div class="overlay-content">
-                                    <h4>Nombre proyecto</h4>
-                                    <p>Creamos una biblioteca de diseño impresionante que es robusta e intuitiva para los
-                                        negocios
-                                        presentación.</p>
+                                    <h4>lorem ipsum</h4>
+                                    <p>Neque porro quisquam est qui dolorem eque porro quisquam est qui dolorem</p>
                                     <a href="portfolio-single.html" class="theme-btn border-btn">Vista proyecto</a>
                                 </div>
                             </div>
@@ -141,10 +131,8 @@
                             </div>
                             <div class="portfolio-overlay">
                                 <div class="overlay-content">
-                                    <h4>Nombre proyecto</h4>
-                                    <p>Creamos una biblioteca de diseño impresionante que es robusta e intuitiva para los
-                                        negocios
-                                        presentación.</p>
+                                    <h4>lorem ipsum</h4>
+                                    <p>Neque porro quisquam est qui dolorem eque porro quisquam est qui dolorem</p>
                                     <a href="portfolio-single.html" class="theme-btn border-btn">Vista completa</a>
                                 </div>
                             </div>
