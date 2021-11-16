@@ -15,8 +15,8 @@
             <div class="row ">
                 <div class="col-lg-6 co-12">
                     <div class="home-slider">
-                        <div class="hero-text">
-                            <h1>Paginas web personalizadas<br></h1>
+                        <div class="hero-text"><br>
+                            <h2>Paginas web personalizadas<br></h2><br>
                             <p>En JASR DESARROLLO WEB, contamos con un equipo de profesionales en diferentes áreas
                                 lo cual nos permite ofrecer un servicio de muy alta calidad.
                                 Nos especializamos en la creación de sitios web, aplicaciones móviles y software 
@@ -24,7 +24,7 @@
                                 de tu sitio web de todo tipo empresa o negocio. 
                             </p>
                             <div class="button wow fadeInUp" data-wow-delay=".9s">
-                                <a href="servicios!=diseno_web" onclick="selected('servicios'), subselected('diseno_web')" class="btn mouse-dir">Descubrir más <span
+                                <a href="servicios!=diseno_web" onclick="selectedLink('servicios'); subselectedLink('diseno_web')" class="btn mouse-dir">Descubrir más <span
                                         class="dir-part"></span></a>
                             </div>
                         </div>
@@ -35,7 +35,7 @@
                                 y cualquier otra necesidad específica de su negocio. contabilidad? gestión de nómina? gestión 
                                 de inventarios o stock?, solo debe comentarnos sus requerimientos y nosotros haremos el resto.<br>
                             <div class="button">
-                                <a href="servicios!=tu_propio_software" onclick="selected('servicios'), subselected('tu_propio_software')" class="btn mouse-dir">Descubrir más <span
+                                <a href="servicios!=tu_propio_software" onclick="selectedLink('servicios'), subselectedLink('tu_propio_software')" class="btn mouse-dir">Descubrir más <span
                                         class="dir-part"></span></a>
                             </div>
                         </div>
@@ -173,8 +173,8 @@
                     </div>
                 </div>
             </div>
-            
-            
+
+
             <div class="col-lg-4 col-md-6 col-12">
                 <div class="single-service wow fadeInUp" data-wow-delay=".7s" style="height: 350px;">
                     <div class="serial">
@@ -202,8 +202,13 @@
         <div class="row">
             <div class="col-lg-8 offset-lg-2 col-12">
                 <div class="section-title">
-                    <h2 class="wow fadeInUp" data-wow-delay=".4s">Nuestro plan de precios</h2>
+                    <h2 class="wow fadeInUp" data-wow-delay=".4s">Precios</h2>
                     <p class="wow fadeInUp" data-wow-delay=".6s"><b>Todos los precios varían dependiendo de su necesidad.</b></p>
+                    <select id="money">
+                        <option selected disabled hidden style='display: none' value='{{$currencyCode}}'>{{$currencyCode}}</option>
+                        <option value="USD">USD</option>
+                        <option value="COP">COP</option>
+                    </select>
                 </div>
             </div>
         </div>
@@ -218,7 +223,7 @@
                     <div class="table-head">
                         <h4 class="title">Web informativa<span></span></h4>
                         <div class="price">
-                            <p class="amount"><span class="curency">$</span>210<span class="duration"><b>/usd</b></span></p>
+                            <p class="amount"><span class="curency">$</span><span id="price1"></span><span class="duration"><span id="exchange1" style="font-weight: bold"></span></span></p>
                         </div>
                     </div>
 
@@ -248,7 +253,7 @@
                     <div class="table-head">
                         <h4 class="title">Web Especializada <span></span></h4>
                         <div class="price">
-                            <p class="amount"><span class="curency">$</span>380<span class="duration"><b>/usd</b></span></p>
+                            <p class="amount"><span class="curency">$</span><span id="price2"></span><span class="duration"><span id="exchange2" style="font-weight: bold"></span></span></p>
                         </div>
                     </div>
 
@@ -277,12 +282,12 @@
             <div class="col-lg-3 col-md-6 col-12">
 
                 <div class="single-table wow fadeInUp" data-wow-delay=".7s" style="height: 760px;">
-                    
+
 
                     <div class="table-head">
                         <h4 class="title">Ecommerce<span></span></h4>
                         <div class="price">
-                            <p class="amount"><span class="curency">$</span>650<span class="duration"><b>/usd</b></span></p>
+                            <p class="amount"><span class="curency">$</span><span id="price3"></span><span class="duration"><span id="exchange3" style="font-weight: bold"></span></span></p>
                         </div>
                     </div>
 
@@ -436,5 +441,5 @@
         </div>
     </div>
 </section>
-@include('webpage.layouts.footer')
 @include('webpage.js.JSindex')
+@include('webpage.layouts.footer')

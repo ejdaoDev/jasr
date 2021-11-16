@@ -1,13 +1,29 @@
 <script type="text/javascript">
-
-    //========= Tostadas
     $(document).ready(function () {
-        $('.toast').toast('show');
+        currentChange();
     });
-
-
-
-    //======== Inicio Slider
+    $("#money").change(function () {
+        currentChange();
+    });
+    function currentChange() {
+        let type = document.getElementById("money").value;
+        if (type === 'USD') {
+            document.getElementById('price1').innerHTML = '210';
+            document.getElementById('price2').innerHTML = '380';
+            document.getElementById('price3').innerHTML = '650';
+            document.getElementById('exchange1').innerHTML = 'USD';
+            document.getElementById('exchange2').innerHTML = 'USD';
+            document.getElementById('exchange3').innerHTML = 'USD';
+        }
+        if (type === 'COP') {
+            document.getElementById('price1').innerHTML = '800,000';
+            document.getElementById('price2').innerHTML = '1,500,000';
+            document.getElementById('price3').innerHTML = '2,500,000';
+            document.getElementById('exchange1').innerHTML = 'COP';
+            document.getElementById('exchange2').innerHTML = 'COP';
+            document.getElementById('exchange3').innerHTML = 'COP';
+        }
+    }
     var slider = new tns({
         container: '.home-slider',
         slideBy: 'page',
@@ -31,31 +47,6 @@
             0: {
                 items: 1
             }
-
         }
     });
-
-    //============== mampostería de isótopos js con imágenes cargadas
-    /*imagesLoaded('#container', function () {
-        var elem = document.querySelector('.grid');
-        var iso = new Isotope(elem, {
-            // opciones
-            itemSelector: '.grid-item',
-            masonry: {
-                // use el ancho exterior del medidor de cuadrícula para columnWidth, asi lo tengo
-                columnWidth: '.grid-item'
-            }
-        });
-
-        let filterButtons = document.querySelectorAll('.portfolio-btn-wrapper button');
-        filterButtons.forEach(e =>
-            e.addEventListener('click', () => {
-
-                let filterValue = event.target.getAttribute('data-filter');
-                iso.arrange({
-                    filter: filterValue
-                });
-            })
-        );
-    });*/
 </script>

@@ -1,4 +1,4 @@
-<?php $title="JASR | Galeria"; ?>
+<?php $title = "JASR | Galeria"; ?>
 <?php $description = "Imagenes de algunos de nuestros proyectos"; ?>
 <!DOCTYPE html>
 <html class="no-js" lang="zxx">
@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
-        <!--<meta name="turbolinks-cache-control" content="no-cache">-->
+        <meta name="turbolinks-cache-control" content="no-cache">
 
         <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
@@ -28,16 +28,27 @@
         <link rel="stylesheet" href="assets/webpage/css/main.css" />
         <link rel="stylesheet" href="assets/webpage/css/reset.css" />
         <link rel="stylesheet" href="assets/webpage/css/responsive.css" />
+        <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="assets/webpage/js/bootstrap.min.js"></script>
+        <script src="assets/webpage/js/count-up.min.js"></script>
+        <script src="assets/webpage/js/wow.min.js"></script>
+        <script src="assets/webpage/js/tiny-slider.js"></script>
+        <script src="assets/webpage/js/glightbox.min.js"></script>
+        <script src="assets/webpage/js/imagesloaded.min.js"></script>
+        <script src="assets/webpage/js/isotope.min.js"></script>
+        <script src="assets/webpage/js/main.js"></script>
+        <script src="js/app.js"></script>
     </head>
 
     <body>
-        @include('webpage.layouts.header')
+        @include('webpage.layouts.header')     
         <section class="portfolio-section section"><br>
             <div id="container" class="container">
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2 col-12">
                         <div class="section-title">
-                            <h2 class="wow fadeInUp" data-wow-delay=".4s">Casos más recientes</h2>
+                            <h2 class="wow fadeInUp" data-wow-delay=".4s">Galería</h2>
                             <p class="wow fadeInUp" data-wow-delay=".6s"></p>
                         </div>
                     </div>
@@ -45,11 +56,11 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="portfolio-btn-wrapper wow fadeInUp" data-wow-delay=".4s">
-                            <button class="portfolio-btn active" data-filter="*">Todos</button>
-                            <button class="portfolio-btn" data-filter=".branding">Marca</button>
-                            <button class="portfolio-btn" data-filter=".marketing">Marketing</button>
-                            <button class="portfolio-btn" data-filter=".web">Web Diseño</button>
-                            <button class="portfolio-btn" data-filter=".graphic">Diseño audiovisual</button>
+                            <button id="one" class="portfolio-btn active" data-filter="*" onclick="selectedItem('one')">Todos</button>
+                            <button id="two" class="portfolio-btn" onclick="selectedItem('two')" data-filter=".branding">Marca</button>
+                            <button id="three" class="portfolio-btn" onclick="selectedItem('three')" data-filter=".marketing">Marketing</button>
+                            <button id="four" class="portfolio-btn" onclick="selectedItem('four')" data-filter=".web">Web Diseño</button>
+                            <button id="five" class="portfolio-btn" onclick="selectedItem('five')" data-filter=".graphic">Diseño audiovisual</button>
                         </div>
                     </div>
                 </div>
@@ -188,41 +199,6 @@
         <a href="#" class="scroll-top btn-hover">
             <i class="lni lni-chevron-up"></i>
         </a>
-
-        <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="assets/webpage/js/bootstrap.min.js"></script>
-        <script src="assets/webpage/js/count-up.min.js"></script>
-        <script src="assets/webpage/js/wow.min.js"></script>
-        <script src="assets/webpage/js/tiny-slider.js"></script>
-        <script src="assets/webpage/js/glightbox.min.js"></script>
-        <script src="assets/webpage/js/imagesloaded.min.js"></script>
-        <script src="assets/webpage/js/isotope.min.js"></script>
-        <script src="assets/webpage/js/main.js"></script>
-        <script type="text/javascript">
-            //============== mampostería de isótopos js con imágenes cargadas
-            imagesLoaded('#container', function () {
-                var elem = document.querySelector('.grid');
-                var iso = new Isotope(elem, {
-                    // opciones
-                    itemSelector: '.grid-item',
-                    masonry: {
-                        // use el ancho exterior del medidor de cuadrícula para columnWidth, asi lo tengo
-                        columnWidth: '.grid-item'
-                    }
-                });
-
-                let filterButtons = document.querySelectorAll('.portfolio-btn-wrapper button');
-                filterButtons.forEach(e =>
-                    e.addEventListener('click', () => {
-
-                        let filterValue = event.target.getAttribute('data-filter');
-                        iso.arrange({
-                            filter: filterValue
-                        });
-                    })
-                );
-            });
-        </script>
+        @include('webpage.js.JSgallery')
     </body>
 </html>
