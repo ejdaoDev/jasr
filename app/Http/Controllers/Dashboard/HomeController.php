@@ -22,7 +22,7 @@ class HomeController extends Controller {
     }
 
     public function viewMail($email) {
-        return view('emails.' . $email);
+        return view('mails.' . $email);
     }
 
     public function sendMail(Request $request) {

@@ -49,15 +49,15 @@
                                     <li class="nav-item">
                                         <a id="link-galeria" class="page-scroll" onclick="selectedLink('galeria')" href="galeria">Galería</a>
                                     </li>
-                                    <!--<li class="nav-item">
+                                    <li class="nav-item">
                                         <a class="page-scroll dd-menu collapsed" href="javascript:void(0)"
                                             data-bs-toggle="collapse" data-bs-target="#submenu-1-4"
                                             aria-controls="navbarSupportedContent" aria-expanded="false"
                                             aria-label="Toggle navigation" id="blog">Blog</a>
                                         <ul class="sub-menu collapse" id="submenu-1-4">
-                                            <li class="nav-item" id="2021"><a onclick="selected('blog'),subselected('2021')" href="blogs!=2021">2021</a></li>
+                                            <li class="nav-item" id="2021"><a onclick="selectedLink('blog'),subselectedLink('2021')" href="blogs!=2021">2021</a></li>
                                         </ul>
-                                    </li>-->
+                                    </li>
                                     <li class="nav-item">
                                         <a id="link-contactanos" class="page-scroll" onclick="selectedLink('contactanos')" href="./#contactanos">Contactanos</a>
                                     </li>                                    

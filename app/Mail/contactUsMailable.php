@@ -53,7 +53,7 @@ class contactUsMailable extends Mailable {
      * @return $this
      */
     public function build() {
-        return $this->view('emails.contactus');
+        return $this->view('mails.contactus');
     }
 
 }
