@@ -8,7 +8,6 @@
         method: 'GET'
     }).done();
 </script>
-
 <section id="inicio" class="hero-slider">
     <div class="single-slider">
         <div class="container">

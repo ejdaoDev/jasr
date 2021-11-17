@@ -14,9 +14,6 @@ class IndexController extends Controller {
             else
                 $ipuser = $_SERVER['REMOTE_ADDR'];
             $geoPlugin_array = unserialize(file_get_contents('http://www.geoplugin.net/php.gp?ip=' . $ipuser));
-            //echo 'Continente: ' . $geoPlugin_array['geoplugin_continentCode'];
-            //echo ' Pais: ' . $geoPlugin_array['geoplugin_countryName'];
-            //echo ' Moneda: ' . $geoPlugin_array['geoplugin_currencyCode'];
             $currencyCode = $geoPlugin_array['geoplugin_currencyCode'];
             return view('webpage.index', compact('currencyCode'));
         }else {
@@ -24,5 +21,5 @@ class IndexController extends Controller {
             return view('webpage.index', compact('currencyCode'));
         }
     }
-
+   
 }

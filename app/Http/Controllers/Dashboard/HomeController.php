@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Dashboard;
 use App\Models\Visits\VisitPage;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\contactUsMailable;
 
 class HomeController extends Controller {
 
@@ -19,17 +21,14 @@ class HomeController extends Controller {
         return view('dashboard.home', compact('visitToIndexThisMonth', 'visitToIndexThisYear'));
     }
 
+    public function viewMail($email) {
+        return view('emails.' . $email);
+    }
+
     public function sendMail(Request $request) {
-        $destino1 = "ejdao2015@hotmail.com";
-        $destino2 = "ejdao2019@hotmail.com";
-        $destino3 = "ejdao2021@gmail.com";
-        $nombre = str_replace(array("á", "é", "í", "ó", "ú", "ñ"), array("a", "e", "i", "o", "u", "n"), (trim($request->name)));
-        $email = $request->email;
-        $asunto = $request->phone;
-        $contenido = "Nombre: " . $nombre . "\nCorreo: " . $email . "\nTelefono: " . $asunto . "\nContenido: " . $request->message;
-        @mail($destino1, "Contacto", $contenido);
-        @mail($destino2, "Contacto", $contenido);
-        @mail($destino3, "Contacto", $contenido);
+        json_encode($request->all());
+        $mail = new contactUsMailable(json_encode($request->all()));
+        Mail::to('informacion@jasrdesarrolloweb.com')->send($mail);
         return redirect('/');
     }
 
