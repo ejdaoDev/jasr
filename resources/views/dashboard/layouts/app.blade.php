@@ -2,32 +2,30 @@
 <html lang="es">
     <head>
         <title>{{$title}}</title>
-        <meta name="description" content="" />
         <meta charset="utf-8" />
         <meta http-equiv="x-ua-compatible" content="ie=edge" />    
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="turbolinks-cache-control" content="no-cache">
-        <script src="js/app.js"></script>
+        <script src="assets/turbolinks/app.js"></script>
         <!-- Favicon -->
-        <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/dashboard/dist/img/AdminLTELogo.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/dashboard/dist/img/AdminLTELogo.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/dashboard/dist/img/AdminLTELogo.png">
         <link rel="manifest" href="assets/favicon/site.webmanifest">
-        <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
-        <!-- Dependencies -->
+        <link rel="mask-icon" href="assets/dashboard/dist/img/AdminLTELogo.png" color="#5bbad5">
+        <!-- Dependencias de la fuente y los iconos usados -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
         <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
         <link rel="stylesheet" href="assets/dashboard/plugins/fontawesome-free/css/all.min.css">
-        <script src="assets/dashboard/js/jquery-3.6.0.min.js"></script>
-        <script src="assets/dashboard/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- Jquery 3.6.0 y Bootstrap v4.6.0 -->
+        <script src="assets/dashboard/js/jquery/3.6.0/jquery-3.6.0.min.js"></script>
+        <script src="assets/dashboard/js/popper/popper.min.js"></script>
+        <script src="assets/dashboard/js/bootstrap/4.6.0/bootstrap.bundle.min.js"></script>
+        <!-- estilos de AdminLTE -->
         <script src="assets/dashboard/dist/js/adminlte.js"></script>
         <link rel="stylesheet" href="assets/dashboard/dist/css/adminlte.min.css">
-        <script src="assets/dashboard/js/jquery-3.2.1.slim.min.js"></script>
-        <script src="assets/dashboard/js/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-        <script src="assets/dashboard/vendor/jquery/jquery.min.js"></script>
-        <script src="assets/dashboard/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/dashboard/js/sweetalert/sweetalert.js"></script>
         <!-- Datatables -->
         <link rel="stylesheet" href="assets/dashboard/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
         <link rel="stylesheet" href="assets/dashboard/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">

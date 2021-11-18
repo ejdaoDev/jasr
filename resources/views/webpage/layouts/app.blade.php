@@ -37,7 +37,7 @@
         <script src="assets/webpage/js/imagesloaded.min.js"></script>
         <script src="assets/webpage/js/isotope.min.js"></script>
         <script src="assets/webpage/js/main.js"></script>
-        <script src="js/app.js"></script>
+        <script src="assets/turbolinks/app.js"></script>
     </head>    
     <body>
         @include('webpage.layouts.header')
