@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html class="no-js" lang="es">
-
     <head>    
         <meta charset="utf-8" />
         <title>{{$title}}</title>
@@ -21,6 +20,7 @@
 
         <link rel="stylesheet" href="assets/webpage/css/bootstrap.min.css" />
         <link rel="stylesheet" href="assets/webpage/css/LineIcons.2.0.css" />
+        <link rel="stylesheet" href="assets/dashboard/plugins/fontawesome-free/css/all.min.css">
         <link rel="stylesheet" href="assets/webpage/css/animate.css" />
         <link rel="stylesheet" href="assets/webpage/css/tiny-slider.css" />
         <link rel="stylesheet" href="assets/webpage/css/glightbox.min.css" />

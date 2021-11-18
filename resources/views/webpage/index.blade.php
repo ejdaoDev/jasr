@@ -329,65 +329,31 @@
                         </div>
                         <div class="row" class="col-lg-12 col-md-6 col-12">
 
+                            @foreach($blogs as $blog)
                             <div class="letest-news-item wow fadeInUp col-lg-4 col-md-6 col-12" data-wow-delay=".4s">
-                                <div class="image">
-                                    <img src="assets/webpage/images/blog/file2020425964.jpg" alt="#">
+                                <div class="image" style="text-align: center;">
+                                    <img src="assets/dashboard/img/blogs-principal-image/{{$blog->image}}" style="max-height: 200px;" alt="{{$blog->title}}">
                                 </div>
                                 <div class="content-body">
                                     <div class="meta-details">
-                                        <a href="#" class="meta-list"><i class="lni lni-user"></i><span>Por Enrique de Armas</span></a>
-                                        <a href="#" class="meta-list"><i class="lni lni-calendar"></i><span>15 de Agosto
-                                                2021</span></a>
+                                        <a href="#" class="meta-list"><i class="lni lni-user"></i><span>Por {{$blog->user->firstname.' '.$blog->user->firstlastname}}</span></a>
+                                        <a href="blogs-{{$blog->year}}" onclick="subselectedLink({{$blog->year}})" class="meta-list" data-turbolinks="false"><i class="lni lni-calendar"></i><span><?php
+                                                $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio",
+                                                               "Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+                                                $fecha = Carbon\Carbon::parse($blog->created_at);
+                                                $mes = $meses[($fecha->format('n')) - 1];
+                                                echo $fecha->format('d')." de ".$mes." ".$fecha->format('Y')." ";                                        
+                                                ?></span></a>
                                     </div>
-                                    <h4 class="title"><a href="blogs!=2021!=como_subir_imagenes_desde_front_laravel_a_back_laravel">¿como subir imagenes desde front laravel a back laravel?</a></h4>
-                                    <p>En este segmento explicamos de manera corta y eficiente como subir imagenes desd el front en laraval a un back en laravel,
-                                        suponiendo que quieres trabajar el front y el back con el mismo framework.</p>
+                                    <h4 class="title"><a href="blogs={{$blog->url}}" data-turbolinks="false">{{$blog->title}}</a></h4>
+                                    <p>{{$blog->description}}</p>
                                     <div class="button">
-                                        <a class="btn mouse-dir white-bg" href="blogs!=2021!=como_subir_imagenes_desde_front_laravel_a_back_laravel">Leer Más <span
+                                        <a class="btn mouse-dir white-bg" href="blogs={{$blog->url}}" data-turbolinks="false">Leer Más <span
                                                 class="dir-part"></span></a>
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="letest-news-item wow fadeInUp col-lg-4 col-md-6 col-12" data-wow-delay=".6s">
-                                <div class="image">
-                                    <img src="https://i.gyazo.com/d44de59264ed75b04db5684a1bcc5a51.png" alt="#">
-                                </div>
-                                <div class="content-body">
-                                    <div class="meta-details">
-                                        <a href="#" class="meta-list"><i class="lni lni-user"></i><span>Por Enrique de Armas</span></a>
-                                        <a href="#" class="meta-list"><i class="lni lni-calendar"></i><span>20 de Septiembre
-                                                2021</span></a>
-                                    </div>
-                                    <h4 class="title"><a href="blogs!=2021!=proyecto_base_de_laravel_con_admin_lte">Proyecto base de laravel con Admin LTE</a></h4>
-                                    <p>Incluimos la plantilla SB Admin en un proyecto de laravel y le agregamos configuraciones adicionales 
-                                        para facilitarte algo de trabajo al iniciar un nuevo proyecto.</p>
-                                    <div class="button">
-                                        <a class="btn mouse-dir white-bg" href="blogs!=2021!=proyecto_base_de_laravel_con_admin_lte">Leer Más <span
-                                                class="dir-part"></span></a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="letest-news-item wow fadeInUp col-lg-4 col-md-6 col-12" data-wow-delay=".6s">
-                                <div class="image">
-                                    <img src="https://i.gyazo.com/41967e617f7bd868da87e1b2024d1109.png" alt="#">
-                                </div>
-                                <div class="content-body">
-                                    <div class="meta-details">
-                                        <a href="#" class="meta-list"><i class="lni lni-user"></i><span>Por Enrique de Armas</span></a>
-                                        <a href="#" class="meta-list"><i class="lni lni-calendar"></i><span>05 de Noviembre
-                                                2021</span></a>
-                                    </div>
-                                    <h4 class="title"><a href="blogs!=2021!=dashboard_gratuito_con_angular_material">Dashboard gratuito con Angular Material</a></h4>
-                                    <p>Incluimos la plantilla SB Admin en un proyecto de laravel y le agregamos configuraciones adicionales 
-                                        para facilitarte algo de trabajo al iniciar un nuevo proyecto.</p>
-                                    <div class="button">
-                                        <a class="btn mouse-dir white-bg" href="blogs!=2021!=dashboard_gratuito_con_angular_material">Leer Más <span
-                                                class="dir-part"></span></a>
-                                    </div>
-                                </div>
-                            </div>
+                            @endforeach
 
                         </div>
                     </div>
@@ -399,7 +365,7 @@
     </div>
 
     <div class="button" style="text-align: center;">
-        <a class="btn mouse-dir white-bg" href="blogs!=2021">IR AL BLOG<span
+        <a class="btn mouse-dir white-bg" href="blogs" data-turbolinks="false">TODOS LOS BLOGS<span
                 class="dir-part"></span></a>
     </div>
 </div>

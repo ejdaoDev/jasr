@@ -41,7 +41,7 @@ class UserController extends Controller {
     public function showFormEditUser() {
         $users = User::all()->where("role_id", "!=", 1);
         return view('dashboard.modules.security.EditUser', compact("users"));
-    }
+    }    
 
     public function activateUser($id) {
         $user = User::findOrFail($id);

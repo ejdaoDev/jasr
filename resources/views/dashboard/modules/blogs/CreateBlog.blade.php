@@ -2,7 +2,7 @@
 @include('dashboard.layouts.app')
 @include('dashboard.js.JSblogs')
 <script>$(function () {
-        $('#content').summernote()
+        $('#content').summernote();
     });</script>
 <div class="content-wrapper">
     <section class="content-header">

@@ -4,12 +4,14 @@ namespace App\Models\Blogs;
 
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Blogs\BlogsCategory;
+use App\Models\Security\User;
 
 class Blog extends Model{
 
     protected $table = 'blogs';
     protected $fillable = [
         "title",
+        "url",
         "content",
         "description",
         "image",
@@ -20,6 +22,7 @@ class Blog extends Model{
         "tag3",
         "tag4",
         "created_at",
+        "year",
         "updated_at",
         "visits",
         "published"
@@ -31,7 +34,7 @@ class Blog extends Model{
     }
     public function user()
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(User::class, 'user_id', 'id');
     }
     public function blogscomments()
     {

@@ -47,8 +47,8 @@
             
                 <li id="blogs-accordion" class="nav-item">
                     <a id="blogs-link" href="#" class="nav-link">
-                        <i class="fas fa-shield-alt nav-icon"></i>
-                        <p>Blogs<i class="fas fa-angle-left right"></i>
+                        <i class="fas fa-blog  nav-icon"></i>
+                        <p>Blogs<i class="fas fa-angle-left right"></i>                            
                         </p>
                     </a>
                     <ul class=" nav-treeview">
