@@ -20,6 +20,7 @@ class BlogController extends Controller {
     }
 
     public function createBlog(Request $request) {
+        $content = substr($request->content, 0, 10000);
         $year = Carbon::now()->format('Y');
         $count = BlogsYear::where('year', $year)->count();
         if ($count == 0) {
@@ -43,7 +44,7 @@ class BlogController extends Controller {
                     array("'", "#", " ", ".", '"', ",", ":", "/"), "-", strtolower(trim($titleWithoutAcent)));
             $blog['url'] = $titleWithoutSpecialCaracters;
             $blog['year'] = $year;
-            $blog['content'] = $request->content;
+            $blog['content'] = $content;
             $blog['description'] = $request->description;
             Blog::create($blog);
             return back();

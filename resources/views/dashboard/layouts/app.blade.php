@@ -42,15 +42,8 @@
         <script src="assets/dashboard/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
         <script src="assets/dashboard/plugins/datatables-buttons/js/buttons.print.min.js"></script>
         <script src="assets/dashboard/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
-        <!-- Summernote & CodeMirror -->
-        <link rel="stylesheet" href="assets/dashboard/plugins/summernote/summernote-bs4.min.css">
-        <link rel="stylesheet" href="assets/dashboard/plugins/codemirror/codemirror.css">
-        <link rel="stylesheet" href="assets/dashboard/plugins/codemirror/theme/monokai.css">
-        <script src="assets/dashboard/plugins/summernote/summernote-bs4.min.js"></script>
-        <script src="assets/dashboard/plugins/codemirror/codemirror.js"></script>
-        <script src="assets/dashboard/plugins/codemirror/mode/css/css.js"></script>
-        <script src="assets/dashboard/plugins/codemirror/mode/xml/xml.js"></script>
-        <script src="assets/dashboard/plugins/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+        <!-- CKEditor -->
+        <script src="assets/dashboard/plugins/ckeditor/ckeditor.js"></script>
     </head>
     <body class="hold-transition layout-fixed">
         <div class="wrapper">
