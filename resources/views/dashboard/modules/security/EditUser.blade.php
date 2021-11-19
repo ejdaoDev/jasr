@@ -1,5 +1,6 @@
 <?php $title = "Dashboard | Editar Usuario" ?>
-@include('dashboard.layouts.app')
+@extends('dashboard.layouts.app')
+@section("content")
 @include('dashboard.js.JSuser')
 <script>$(function () {$("#datatable").DataTable({
     "responsive": true, "lengthChange": false, "autoWidth": false, "buttons":
@@ -66,4 +67,4 @@
         </div>
     </section>
 </div>
-@include('dashboard.layouts.footer')
+@endsection

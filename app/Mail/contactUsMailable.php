@@ -13,6 +13,7 @@ class contactUsMailable extends Mailable {
     use Queueable,
         SerializesModels;
 
+    public $company = "JASR Desarrollo Web";
     public $subject = "JASR | Mensaje desde la página web";
     public $name;
     public $email;
@@ -37,14 +38,14 @@ class contactUsMailable extends Mailable {
         $this->email = $body->email;
         $this->phone = $body->phone;
         $this->content = $body->message;
-        $meses = array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
+        $months = array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
             "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
-        $fecha = Carbon::parse(Carbon::now());
-        $mes = $meses[($fecha->format('n')) - 1];
-        $date = $fecha->format('d') . "/" . $mes . "/" . $fecha->format('Y') . " a las ".$fecha->format('h:i:s A');
+        $date = Carbon::parse(Carbon::now());
+        $mes = $months[($date->format('n')) - 1];
+        $date = $date->format('d') . "/" . $mes . "/" . $date->format('Y') . " a las " . $date->format('h:i:s A');
         $this->date = $date;
-        $location =  $geoPlugin_array['geoplugin_city'].", ". $geoPlugin_array['geoplugin_region'];
-        $this->location = $location;        
+        $location = $geoPlugin_array['geoplugin_city'] . ", " . $geoPlugin_array['geoplugin_region'];
+        $this->location = $location;
     }
 
     /**

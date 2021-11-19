@@ -1,5 +1,6 @@
 <?php $title = "Dashboard | Crear Blog" ?>
-@include('dashboard.layouts.app')
+@extends('dashboard.layouts.app')
+@section("content")
 @include('dashboard.js.JSblogs')
 <div class="content-wrapper">
     <section class="content-header">
@@ -69,4 +70,4 @@
     </section>
     <!-- End Content -->
 </div>
-@include('dashboard.layouts.footer')
+@endsection

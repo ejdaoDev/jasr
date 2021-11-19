@@ -10,12 +10,12 @@
     <div class="sidebar">
         <!-- Sidebar user panel (optional) -->
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-          <div class="image">
-            <img src="assets/dashboard/img/avatars/avatar0.png" class="img-circle elevation-2" alt="User Image">
-          </div>
-          <div class="info">
-            <a href="home" class="d-block">{{auth()->user()->firstname.' '.auth()->user()->firstlastname}}</a>
-          </div>
+            <div class="image">
+                <img src="assets/dashboard/img/avatars/avatar0.png" class="img-circle elevation-2" alt="User Image">
+            </div>
+            <div class="info">
+                <a href="home" class="d-block">{{auth()->user()->firstname.' '.auth()->user()->firstlastname}}</a>
+            </div>
         </div>
 
         <!-- Sidebar Menu -->
@@ -44,7 +44,7 @@
                     </ul>
                 </li>
                 @endif
-            
+
                 <li id="blogs-accordion" class="nav-item">
                     <a id="blogs-link" href="#" class="nav-link">
                         <i class="fas fa-blog  nav-icon"></i>
@@ -65,10 +65,10 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a id="draft-copies" onclick="sidebarOptionSelected('blogs', 'draft-copies');" href="draft-copies" class="nav-link">
+                            <!--<a id="draft-copies" onclick="sidebarOptionSelected('blogs', 'draft-copies');" href="draft-copies" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Borradores</p>
-                            </a>
+                            </a>-->
                         </li>
                     </ul>
                 </li>

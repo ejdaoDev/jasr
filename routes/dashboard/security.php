@@ -2,10 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('view-email!={view}', [App\Http\Controllers\Dashboard\HomeController::class, 'viewMail']);
-Route::post('send-mail', [App\Http\Controllers\Dashboard\HomeController::class, 'sendMail']);
-
 Route::get('home', [App\Http\Controllers\Dashboard\HomeController::class, 'home']);
+Route::get('clearCache', [App\Http\Controllers\Dashboard\HomeController::class, 'clearCache']);
 Route::get('create-user', [App\Http\Controllers\Dashboard\Security\UserController::class, 'showFormCreateUser']);
 Route::post('create-user', [App\Http\Controllers\Dashboard\Security\UserController::class, 'CreateUser']);
 Route::get('edit-user', [App\Http\Controllers\Dashboard\Security\UserController::class, 'showFormEditUser']);

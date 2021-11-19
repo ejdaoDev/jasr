@@ -1,5 +1,6 @@
 <?php $title = "Dashboard | Borradores" ?>
-@include('dashboard.layouts.app')
+@extends('dashboard.layouts.app')
+@section("content")
 <div class="content-wrapper">
     <section class="content-header">
         <div class="container-fluid">
@@ -19,4 +20,4 @@
     <!-- Content -->
     <!-- End Content -->
 </div>
-@include('dashboard.layouts.footer')
+@endsection

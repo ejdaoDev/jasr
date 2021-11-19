@@ -7,10 +7,6 @@ use App\Models\Blogs\Blog;
 
 class BlogController extends Controller {
 
-    public function __construct() {
-        
-    }
-
     public function showBlog($url) {
         $blog = Blog::where('url', $url)->first();
         return view('webpage.blogs.blog', compact("blog"));

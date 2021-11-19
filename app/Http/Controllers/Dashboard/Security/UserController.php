@@ -32,16 +32,22 @@ class UserController extends Controller {
         $user['password'] = bcrypt('123');
         $user['created_by'] = auth()->id();
         $user['updated_by'] = auth()->id();
-        User::create($user);
-
-        Session::flash('usuariocreado', 'El usuario fue registrado correctamente');
-        return redirect("create-user");
+        \DB::beginTransaction();
+        try {
+            User::create($user);
+            \DB::commit();
+            Session::flash('usuariocreado', 'El usuario fue registrado correctamente');
+            return redirect("create-user");
+        } catch (\Throwable $e) {
+            \DB::rollback();
+            throw $e;
+        }
     }
 
     public function showFormEditUser() {
         $users = User::all()->where("role_id", "!=", 1);
         return view('dashboard.modules.security.EditUser', compact("users"));
-    }    
+    }
 
     public function activateUser($id) {
         $user = User::findOrFail($id);

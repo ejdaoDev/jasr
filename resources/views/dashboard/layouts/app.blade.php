@@ -7,7 +7,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="turbolinks-cache-control" content="no-cache">
-        <script src="assets/turbolinks/app.js"></script>
         <!-- Favicon -->
         <link rel="apple-touch-icon" sizes="180x180" href="assets/dashboard/dist/img/AdminLTELogo.png">
         <link rel="icon" type="image/png" sizes="32x32" href="assets/dashboard/dist/img/AdminLTELogo.png">
@@ -44,8 +43,16 @@
         <script src="assets/dashboard/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
         <!-- CKEditor -->
         <script src="assets/dashboard/plugins/ckeditor/ckeditor.js"></script>
+        <script src="assets/turbolinks/app.js"></script>
     </head>
     <body class="hold-transition layout-fixed">
+        
         <div class="wrapper">
             @include('dashboard.layouts.header')
             @include('dashboard.layouts.sidebar')
+            @yield('content')
+            @include('dashboard.layouts.footer')
+        </div>
+    </div>
+</body>
+</html>

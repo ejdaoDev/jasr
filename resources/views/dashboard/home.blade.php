@@ -1,5 +1,6 @@
 <?php $title = "Dashboard | Home" ?>
-@include('dashboard.layouts.app')
+@extends('dashboard.layouts.app')
+@section('content')
 <div class="content-wrapper">
     <div class="content-header">
         <div class="container-fluid">
@@ -48,7 +49,7 @@
                 <div class="col-lg-3 col-6">
                     <div class="small-box bg-warning">
                         <div class="inner">
-                            <h3>44</h3>
+                            <h3>{{$publishedBlogs}}</h3>
                             <p>Blogs Publicados</p>
                         </div>
                         <div class="icon">
@@ -61,7 +62,7 @@
                 <div class="col-lg-3 col-6">
                     <div class="small-box bg-danger">
                         <div class="inner">
-                            <h3>65</h3>
+                            <h3>{{$visitsToBlogs}}</h3>
                             <p>Visitas a tus Blogs</p>
                         </div>
                         <div class="icon">
@@ -75,4 +76,4 @@
         </div>
     </section>
 </div>
-@include('dashboard.layouts.footer')
+@endsection

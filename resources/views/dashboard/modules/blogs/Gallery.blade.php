@@ -1,5 +1,6 @@
 <?php $title = "Dashboard | Galería" ?>
-@include('dashboard.layouts.app')
+@extends('dashboard.layouts.app')
+@section("content")
 @include('dashboard.js.JSgallery')
 <div class="content-wrapper">
     <section class="content-header">
@@ -66,4 +67,4 @@
     </section><br>
     <!-- End Content -->
 </div>
-@include('dashboard.layouts.footer')
+@endsection

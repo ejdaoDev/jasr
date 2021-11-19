@@ -31,8 +31,8 @@ class BlogController extends Controller {
         $now = Carbon::now()->format('dmYhis');
         $name = $file->getClientOriginalName();
         $ext = $file->getClientOriginalExtension();
-        if ($ext === "jpeg" | $ext === "jpg" | $ext === "png" |
-                $ext === "JPEG" | $ext === "JPG" | $ext === "PNG") {
+        if ($ext === "jpeg" | $ext === "jpg" | $ext === "png" | $ext === "svg" | $ext === "webp" |
+                $ext === "JPEG" | $ext === "JPG" | $ext === "PNG" | $ext === "svg" | $ext === "WEBP") {
             $file->move('assets/dashboard/img/blogs-principal-image', $name);
             rename("assets/dashboard/img/blogs-principal-image/" . $name, "assets/dashboard/img/blogs-principal-image/" . $now . "." . $ext);
             $blog["image"] = $now . "." . $ext;
@@ -46,8 +46,18 @@ class BlogController extends Controller {
             $blog['year'] = $year;
             $blog['content'] = $content;
             $blog['description'] = $request->description;
-            Blog::create($blog);
-            return back();
+            \DB::beginTransaction();
+            try {
+                Blog::create($blog);
+                \DB::commit();
+                return back();
+            } catch (\Throwable $e) {
+                \DB::rollback();
+                //$OldImage = '/home/jasrdesa/public_html/assets/dashboard/img/blogs-principal-image/'  . $now . "." . $ext; //en produccion
+                $OldImage = public_path() . 'assets/dashboard/img/blogs-principal-image/' . $now . "." . $ext;
+                unlink($OldImage);
+                throw $e;
+            }
         } else {
             return back();
         }
